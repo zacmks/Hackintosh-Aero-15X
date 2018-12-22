@@ -27,6 +27,13 @@ Misc:
 ### Hardware notes:
 - Intel WiFi/Bluetooth card need to be replaced with a compatible one. (Used here: **Broadcom BCM94352Z**)
 
+## How to use this repository:
+- Root folder has the version of Hackintosh (e.g. 10.13.6 - High Sierra)
+Then, inside each folder:
+- EFI/CLOVER: Clover files
+- Library/Extensions: Has the kext files that needs to be put in your Library/Extensions folder
+- patches: Has the used SSDT/DSDT patches for this version
+
 ## Working
 
 **USB Based Devices**
