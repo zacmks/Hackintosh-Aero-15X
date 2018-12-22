@@ -44,17 +44,21 @@ Then, inside each folder:
 - [x] HD Camera (2.0)
 - [x] Keyboard (2.0)
 - [x] Bluetooth (Internal 2.0)
+
 **Network**
 - [x] Ethernet card
 - [x] WiFi + Bluetooth
+
 **Power**
 - [x] CPU power management
 - [x] Battery indicator
 - [x] USB PM
+
 ### Graphics
 - [x] Intel graphics card
 - [x] **Nvidia graphics card** (over hdmi)
 - [x] HDMI (with Nvidia GC)
+
 ### Misc
 - [x] Sound (internal speakers + mic jack on/off)
 - [x] Touchpad
