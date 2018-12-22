@@ -1,12 +1,12 @@
 # Hackintosh-Aero-15X
 Hackintosh for Gigabyte Aero 15X V8
 
-##Specs
+## Specs
 - Processor: i7-8750H
 - Momery: 32GB 2667 MHz DDR4 (Upgraded, original: 16GB)
 - Panel: LCD FHD 144Hz 1920x1080 IPS
 - Graphics: Intel UHD Graphics 630 + NVIDIA GeForce GTX 1070 GDDR5 8GB
-###I/O / Ports
+### I/O / Ports
 - 3x USB 3.1 Gen1 (Type-A)
 - 1x Thunderbolt™ 3 (USB Type-C)
 - 1x HDMI 2.0
@@ -15,36 +15,36 @@ Hackintosh for Gigabyte Aero 15X V8
 - 1x SD Card Reader
 - 1x DC-in Jack
 - 1x RJ-45
-###Misc
+### Misc
 - Internal Speaker
 - HD Camera
 
-###Hardware notes:
+### Hardware notes:
 - Intel WiFi/Bluetooth card need to be replaced with a compatible one. (Used here: **Broadcom BCM94352Z**)
 
-##Working
+## Working
 
-###USB Devices
+### USB Devices
 - All USB ports (2.0 + 3.0)
 - Card Reader
 - HD Camera
 - Keyboard
-###Network
+### Network
 - Ethernet card
 - WiFi + Bluetooth
-###Power
+### Power
 - CPU power management
 - Battery indicator
 - USB PM
-###Graphics
+### Graphics
 - Intel graphics card
 - **Nvidia graphics card** (over hdmi)
 - HDMI (with Nvidia GC)
-###Misc
+### Misc
 - Sound (internal speakers + mic jack on/off)
 - Touchpad
 
-###Not working/Issues
+### Not working/Issues
 
 - USB based devices stuttering (Keyboard;BT Keyboard;Mouse;BT Mouse;)
 - Shutdown/Sleep/Restart
