@@ -9,7 +9,7 @@ Hackintosh for Gigabyte Aero 15X V8
 - Panel: LCD FHD 144Hz 1920x1080 IPS
 - Graphics: Intel UHD Graphics 630 + NVIDIA GeForce GTX 1070 GDDR5 8GB
 
-I/O / Ports
+I/O | Ports:
 
 - 3x USB 3.1 Gen1 (Type-A)
 - 1x Thunderbolt™ 3 (USB Type-C)
@@ -20,7 +20,7 @@ I/O / Ports
 - 1x DC-in Jack
 - 1x RJ-45
 
-Misc
+Misc:
 - Internal Speaker
 - HD Camera
 ```
