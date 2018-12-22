@@ -29,6 +29,7 @@ Misc:
 
 ## How to use this repository:
 - Root folder has the version of Hackintosh (e.g. 10.13.6 - High Sierra)
+
 Then, inside each folder:
 - EFI/CLOVER: Clover files
 - Library/Extensions: Has the kext files that needs to be put in your Library/Extensions folder
