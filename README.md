@@ -24,28 +24,28 @@ Hackintosh for Gigabyte Aero 15X V8
 
 ## Working
 
-### USB Devices
-- All USB ports (2.0 + 3.0)
-- Card Reader
-- HD Camera
-- Keyboard
-### Network
-- Ethernet card
-- WiFi + Bluetooth
-### Power
-- CPU power management
-- Battery indicator
-- USB PM
+**USB Based Devices**
+- [x] All USB ports (2.0 + 3.0)
+- [x] Card Reader (3.0)
+- [x] HD Camera (2.0)
+- [x] Keyboard (2.0)
+- [x] Bluetooth (Internal 2.0)
+**Network**
+- [x] Ethernet card
+- [x] WiFi + Bluetooth
+**Power**
+- [x] CPU power management
+- [x] Battery indicator
+- [x] USB PM
 ### Graphics
-- Intel graphics card
-- **Nvidia graphics card** (over hdmi)
-- HDMI (with Nvidia GC)
+- [x] Intel graphics card
+- [x] **Nvidia graphics card** (over hdmi)
+- [x] HDMI (with Nvidia GC)
 ### Misc
-- Sound (internal speakers + mic jack on/off)
-- Touchpad
+- [x] Sound (internal speakers + mic jack on/off)
+- [x] Touchpad
 
-### Not working/Issues
-
-- USB based devices stuttering (Keyboard;BT Keyboard;Mouse;BT Mouse;)
-- Shutdown/Sleep/Restart
-- Thunderbol hotplug
+## Not working/Issues
+- [ ] USB based devices stuttering (Keyboard;BT Keyboard;Mouse;BT Mouse;)
+- [ ] Shutdown/Sleep/Restart
+- [ ] Thunderbol hotplug
