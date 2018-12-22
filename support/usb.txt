@@ -1,0 +1,18 @@
+USB: 2.0
+0x02/HS02 // Far Right
+0x03/HS03 // Left
+0x04/HS04 // Near Right
+
+USB: 3.0
+0x12/SS02 // Far Right
+0x13/SS03 // Left
+0x14/SS04 // Near Right
+
+Other:
+USB 2.0
+0x09/HS09 // HD WebCam
+0x0A/HS10 // WiFi Bluetooth
+0x0B/HS11 // Keyboard
+
+USB 3.0
+0x15/SS05 // Card Reader
