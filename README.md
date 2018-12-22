@@ -59,9 +59,9 @@ Then, inside each folder:
 - [x] **Nvidia graphics card** (over hdmi)
 - [x] HDMI (with Nvidia GC)
 
-### Misc
-- [x] Sound (internal speakers + mic jack on/off)
-- [x] Touchpad
+- Misc
+-- [x] Sound (internal speakers + mic jack on/off)
+-- [x] Touchpad
 
 ## Not working/Issues
 - [ ] USB based devices stuttering (Keyboard;BT Keyboard;Mouse;BT Mouse;)
