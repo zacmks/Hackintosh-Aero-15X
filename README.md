@@ -3,7 +3,7 @@ Hackintosh for Gigabyte Aero 15X V8
 
 ## Specs
 - Processor: i7-8750H
-- Momery: 32GB 2667 MHz DDR4 (Upgraded, original: 16GB)
+- Memory: 32GB 2667 MHz DDR4 (Upgraded, original: 16GB)
 - Panel: LCD FHD 144Hz 1920x1080 IPS
 - Graphics: Intel UHD Graphics 630 + NVIDIA GeForce GTX 1070 GDDR5 8GB
 ### I/O / Ports
