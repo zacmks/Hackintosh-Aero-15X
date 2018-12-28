@@ -2,6 +2,7 @@
 Hackintosh for Gigabyte Aero 15X V8
 
 Please see the following for more details:
+
 https://www.tonymacx86.com/threads/guide-aero-15x-v8-high-sierra-nvidia-graphics.267883/
 
 ## Specs
