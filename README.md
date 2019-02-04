@@ -71,3 +71,9 @@ Then, inside each folder:
 - [ ] USB based devices stuttering (Keyboard;BT Keyboard;Mouse;BT Mouse;)
 - [ ] Shutdown/Sleep/Restart
 - [ ] Thunderbol hotplug
+
+
+## Details about Aero 15X V8 hackintosh
+
+Looks like this machine ACPI specs are not much compatible with Apple's Mac/Macbooks ACPI
+Thus, it might need some extensive patching compared to other machines, such as Lenovo's Ideapad series
