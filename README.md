@@ -76,4 +76,5 @@ Then, inside each folder:
 ## Details about Aero 15X V8 hackintosh
 
 Looks like this machine ACPI specs are not much compatible with Apple's Mac/Macbooks ACPI
+
 Thus, it might need some extensive patching compared to other machines, such as Lenovo's Ideapad series
