@@ -21,25 +21,28 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
     Device(UIAC)
     {
         Name(_HID, "UIA00000")
-
         Name(RMCF, Package()
         {
+            // USB Power Properties for Sierra (using USBInjectAll injection)
+            "AppleBusPowerController", Package()
+            {
+                // these values from iMac17,1
+                "kUSBSleepPortCurrentLimit", 2100,
+                "kUSBSleepPowerSupply", 5100,
+                "kUSBWakePortCurrentLimit", 2100,
+                "kUSBWakePowerSupply", 5100,
+            },
             "8086_a36d", Package()
             {
-                "port-count", Buffer() { 0x0d, 0, 0, 0 },
+                "port-count", Buffer() { 26, 0, 0, 0 },
                 "ports", Package()
                 {
-//                    "HS01", Package() // USB-C + Multiport
-//                    {
-//                        "UsbConnector", 9,
-//                        "port", Buffer() { 1, 0, 0, 0 },
-//                    },
                     "HS02", Package() // Far Right
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 2, 0, 0, 0 },
                     },
-                    "HS03", Package() // Left + USB-C-UP (3.0)
+                    "HS03", Package() // Left
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 3, 0, 0, 0 },
@@ -81,14 +84,9 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
                     },
                     "SS05", Package() // Card Reader
                     {
-                        "UsbConnector", 255,
+                        "UsbConnector", 3,
                         "port", Buffer() { 21, 0, 0, 0 },
                     },
-//                    "USR2", Package()
-//                    {
-//                        "UsbConnector", 9,
-//                        "port", Buffer() { 16, 0, 0, 0 },
-//                    },
                 },
             },
         })

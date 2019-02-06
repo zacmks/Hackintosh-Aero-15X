@@ -70,7 +70,7 @@ Then, inside each folder:
 ## Not working/Issues
 - [ ] USB based devices stuttering (Keyboard;BT Keyboard;Mouse;BT Mouse;)
 - [ ] Shutdown/Sleep/Restart
-- [ ] Thunderbol hotplug
+- [ ] Thunderbolt hotplug
 
 
 ## Details about Aero 15X V8 hackintosh

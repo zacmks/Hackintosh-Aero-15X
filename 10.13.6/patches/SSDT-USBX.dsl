@@ -9,9 +9,11 @@ DefinitionBlock("", "SSDT", 2, "hack", "USBX", 0)
             If (!Arg2) { Return (Buffer() { 0x03 } ) }
             Return (Package()
             {
-                // these values from MacBookPro14,3
-                "kUSBSleepPortCurrentLimit", 3000,
-                "kUSBWakePortCurrentLimit", 3000,
+                // these values from iMac17,1
+                "kUSBSleepPortCurrentLimit", 2100,
+                "kUSBSleepPowerSupply", 5100,
+                "kUSBWakePortCurrentLimit", 2100,
+                "kUSBWakePowerSupply", 5100,
             })
         }
     }
