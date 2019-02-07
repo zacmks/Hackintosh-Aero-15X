@@ -11,6 +11,7 @@
 			<string>SSDT.aml</string>
 			<string>SSDT-XCPM.aml</string>
 			<string>SSDT-PluginType1.aml</string>
+			<string>SSDT-Disable-DGPU.aml</string>
 		</array>
 		<key>DSDT</key>
 		<dict>

@@ -11,6 +11,7 @@
 			<string>SSDT.aml</string>
 			<string>SSDT-XCPM.aml</string>
 			<string>SSDT-PluginType1.aml</string>
+			<string>SSDT-Disable-DGPU.aml</string>
 		</array>
 		<key>DSDT</key>
 		<dict>
@@ -29,6 +30,26 @@
 			<false/>
 			<key>Patches</key>
 			<array>
+				<dict>
+					<key>Comment</key>
+					<string>change H_EC to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>SF9FQw==</data>
+					<key>Replace</key>
+					<data>RUNfXw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>U0FUMA==</data>
+					<key>Replace</key>
+					<data>U0FUQQ==</data>
+				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
@@ -102,6 +123,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change Method(_PTS,1,N) to ZPTS, pair with SSDT-PTSWAK.aml</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>X1BUUwE=</data>
 					<key>Replace</key>
@@ -110,6 +133,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change Method(_WAK,1,N) to ZWAK, pair with SSDT-PTSWAK.aml</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>X1dBSwE=</data>
 					<key>Replace</key>
@@ -286,29 +311,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change HDAS to HDEF</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>SERBUw==</data>
-				<key>Replace</key>
-				<data>SERFRg==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change SAT0 to SATA</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>U0FUMA==</data>
-				<key>Replace</key>
-				<data>U0FUQQ==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>disable port limit in XHCI kext (credit RehabMan, based prior PMHeart patch)</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Name</key>
