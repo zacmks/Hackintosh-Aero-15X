@@ -51,14 +51,14 @@ DefinitionBlock("", "SSDT", 2, "hack", "_RMCF", 0)
         //
         //  0: does not manipulate the DGPU in _WAK and _PTS
         //  1: disables the DGPU in _WAK and enables it in _PTS
-        Name(DPTS, 1)
+        Name(DPTS, 0)
 
         // SHUT: Shutdown fix, disable _PTS code when Arg0==5 (shutdown)
         //
         //  0: does not affect _PTS behavior during shutdown
         //  bit 0 set: disables _PTS code during shutdown
         //  bit 1 set: sets SLPE to zero in _PTS during shutdown
-        Name(SHUT, 2)
+        Name(SHUT, 0)
 
         // XPEE: XHC.PMEE fix, set XHC.PMEE=0 in _PTS when Arg0==5 (shutdown)
         // This fixes "auto restart" after shutdown when USB devices are plugged into XHC on
@@ -66,7 +66,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "_RMCF", 0)
         //
         // 0: does not affect _PTS behavior during shutdown
         // 1: sets XHC.PMEE in _PTS code during shutdown
-        Name(XPEE, 1)
+        Name(XPEE, 0)
 
         // SSTF: _SI._SST fix.  To fix LED on wake.  Useful for some Thinkpad laptops.
         //
@@ -123,7 +123,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "_RMCF", 0)
         // DWOU: Disable wake on USB
         // 1: Disable wake on USB
         // 0: Do not disable wake on USB
-        Name(DWOU, 1)
+        Name(DWOU, 0)
     }
 #ifndef NO_DEFINITIONBLOCK
 }
