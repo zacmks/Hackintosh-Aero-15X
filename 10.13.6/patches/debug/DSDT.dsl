@@ -10395,21 +10395,28 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
     })
     Method (_PTS, 1, NotSerialized)  // _PTS: Prepare To Sleep
     {
-        If (Arg0)
+        \rmdt.p2("_PTS enter", Arg0)
+If (Arg0)
         {
             \_SB.TPM.TPTS (Arg0)
             RPTS (Arg0)
             \_SB.PCI0.LPCB.SPTS (Arg0)
             \_SB.PCI0.NPTS (Arg0)
         }
+\rmdt.p1("_PTS exit")
+
     }
 
     Method (_WAK, 1, NotSerialized)  // _WAK: Wake
     {
-        \_SB.PCI0.NWAK (Arg0)
+        \rmdt.p2("_WAK enter", Arg0)
+\_SB.PCI0.NWAK (Arg0)
         \_SB.PCI0.LPCB.SWAK (Arg0)
         RWAK (Arg0)
-        Return (WAKP)
+        
+\rmdt.p1("_WAK exit")
+Return (WAKP)
+
     }
 
     Scope (_SB)
@@ -57519,9 +57526,16 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
                 Return (Zero)
             }
 
-            Method (_LID, 0, NotSerialized)  // _LID: Lid Status
+            Method (LIDX, 0, NotSerialized)  // _LID: Lid Status
             {
                 Return (One)
+            }
+            Method (_LID, 0, NotSerialized)
+            {
+                \rmdt.p1("LID0._LID enter")
+                Store(LIDX(), Local0)
+                \rmdt.p2("LID0._LID returning", Local0)
+                Return(Local0)
             }
         }
     }
@@ -59026,70 +59040,95 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
 
             Method (_Q28, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x28, DBG8)
+                \rmdt.p1("EC _Q28 enter")
+Store (0x28, DBG8)
                 BRTN (0x87)
+\rmdt.p1("EC _Q28 exit")
+
             }
 
             Method (_Q30, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x30, DBG8)
+                \rmdt.p1("EC _Q30 enter")
+Store (0x30, DBG8)
                 BRTN (0x86)
+\rmdt.p1("EC _Q30 exit")
+
             }
 
             Method (_Q33, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x33, DBG8)
+                \rmdt.p1("EC _Q33 enter")
+Store (0x33, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xCA, PSON)
                 }
+\rmdt.p1("EC _Q33 exit")
+
             }
 
             Method (_Q40, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x40, DBG8)
+                \rmdt.p1("EC _Q40 enter")
+Store (0x40, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xC7, MUTE)
                 }
+\rmdt.p1("EC _Q40 exit")
+
             }
 
             Method (_Q41, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x41, DBG8)
+                \rmdt.p1("EC _Q41 enter")
+Store (0x41, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xC8, Zero)
                 }
+\rmdt.p1("EC _Q41 exit")
+
             }
 
             Method (_Q42, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x42, DBG8)
+                \rmdt.p1("EC _Q42 enter")
+Store (0x42, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xC9, Zero)
                 }
+\rmdt.p1("EC _Q42 exit")
+
             }
 
             Method (_Q50, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x50, DBG8)
+                \rmdt.p1("EC _Q50 enter")
+Store (0x50, DBG8)
                 Notify (SLPB, 0x80)
+\rmdt.p1("EC _Q50 exit")
+
             }
 
             Method (_Q57, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x57, DBG8)
+                \rmdt.p1("EC _Q57 enter")
+Store (0x57, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xC6, Zero)
                 }
+\rmdt.p1("EC _Q57 exit")
+
             }
 
             Method (_Q60, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x60, DBG8)
+                \rmdt.p1("EC _Q60 enter")
+Store (0x60, DBG8)
                 ACCK ()
                 If (_OSI ("Windows 2009"))
                 {
@@ -59110,17 +59149,23 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
                 {
                     Store (One, WIN8)
                 }
+\rmdt.p1("EC _Q60 exit")
+
             }
 
             Method (_Q61, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x61, DBG8)
+                \rmdt.p1("EC _Q61 enter")
+Store (0x61, DBG8)
                 ACCK ()
+\rmdt.p1("EC _Q61 exit")
+
             }
 
             Method (_Q62, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x62, DBG8)
+                \rmdt.p1("EC _Q62 enter")
+Store (0x62, DBG8)
                 BSCK ()
                 If (_OSI ("Windows 2009"))
                 {
@@ -59141,223 +59186,319 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
                 {
                     Store (One, WIN8)
                 }
+\rmdt.p1("EC _Q62 exit")
+
             }
 
             Method (_Q63, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x63, DBG8)
+                \rmdt.p1("EC _Q63 enter")
+Store (0x63, DBG8)
                 BSCK ()
+\rmdt.p1("EC _Q63 exit")
+
             }
 
             Method (_Q64, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x64, DBG8)
+                \rmdt.p1("EC _Q64 enter")
+Store (0x64, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xCF, Zero)
                 }
+\rmdt.p1("EC _Q64 exit")
+
             }
 
             Method (_Q65, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x65, DBG8)
+                \rmdt.p1("EC _Q65 enter")
+Store (0x65, DBG8)
                 LPST ()
+\rmdt.p1("EC _Q65 exit")
+
             }
 
             Method (_Q66, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x66, DBG8)
+                \rmdt.p1("EC _Q66 enter")
+Store (0x66, DBG8)
                 Notify (\_TZ.TZ01, 0x80)
+\rmdt.p1("EC _Q66 exit")
+
             }
 
             Method (_Q67, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x67, DBG8)
+                \rmdt.p1("EC _Q67 enter")
+Store (0x67, DBG8)
                 Notify (\_TZ.TZ01, 0x80)
+\rmdt.p1("EC _Q67 exit")
+
             }
 
             Method (_Q68, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x68, DBG8)
+                \rmdt.p1("EC _Q68 enter")
+Store (0x68, DBG8)
                 Notify (\_TZ.TZ01, 0x80)
+\rmdt.p1("EC _Q68 exit")
+
             }
 
             Method (_Q69, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x69, DBG8)
+                \rmdt.p1("EC _Q69 enter")
+Store (0x69, DBG8)
                 LPST ()
+\rmdt.p1("EC _Q69 exit")
+
             }
 
             Method (_Q70, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x70, DBG8)
+                \rmdt.p1("EC _Q70 enter")
+Store (0x70, DBG8)
                 Notify (LID0, 0x80)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xEF, LSTE)
                 }
+\rmdt.p1("EC _Q70 exit")
+
             }
 
             Method (_Q71, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x71, DBG8)
+                \rmdt.p1("EC _Q71 enter")
+Store (0x71, DBG8)
                 Notify (LID0, 0x80)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xEF, LSTE)
                 }
+\rmdt.p1("EC _Q71 exit")
+
             }
 
             Method (_Q75, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x75, DBG8)
+                \rmdt.p1("EC _Q75 enter")
+Store (0x75, DBG8)
                 LPST ()
+\rmdt.p1("EC _Q75 exit")
+
             }
 
             Method (_Q76, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x76, DBG8)
+                \rmdt.p1("EC _Q76 enter")
+Store (0x76, DBG8)
                 LPST ()
+\rmdt.p1("EC _Q76 exit")
+
             }
 
             Method (_Q79, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x79, DBG8)
+                \rmdt.p1("EC _Q79 enter")
+Store (0x79, DBG8)
                 Notify (^^^PEG0.PEGP, 0x81)
+\rmdt.p1("EC _Q79 exit")
+
             }
 
             Method (_Q7A, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x7A, DBG8)
+                \rmdt.p1("EC _Q7A enter")
+Store (0x7A, DBG8)
                 LPST ()
+\rmdt.p1("EC _Q7A exit")
+
             }
 
             Method (_Q81, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x81, DBG8)
+                \rmdt.p1("EC _Q81 enter")
+Store (0x81, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xC2, WNON)
                 }
+\rmdt.p1("EC _Q81 exit")
+
             }
 
             Method (_Q83, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x83, DBG8)
+                \rmdt.p1("EC _Q83 enter")
+Store (0x83, DBG8)
                 SMGR (0xF4, One)
+\rmdt.p1("EC _Q83 exit")
+
             }
 
             Method (_Q84, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x84, DBG8)
+                \rmdt.p1("EC _Q84 enter")
+Store (0x84, DBG8)
                 SMGR (0xF4, Zero)
+\rmdt.p1("EC _Q84 exit")
+
             }
 
             Method (_Q85, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x85, DBG8)
+                \rmdt.p1("EC _Q85 enter")
+Store (0x85, DBG8)
                 SMGR (0xF5, One)
+\rmdt.p1("EC _Q85 exit")
+
             }
 
             Method (_Q86, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x86, DBG8)
+                \rmdt.p1("EC _Q86 enter")
+Store (0x86, DBG8)
                 SMGR (0xF5, Zero)
+\rmdt.p1("EC _Q86 exit")
+
             }
 
             Method (_Q87, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x87, DBG8)
+                \rmdt.p1("EC _Q87 enter")
+Store (0x87, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xC1, BTON)
                 }
+\rmdt.p1("EC _Q87 exit")
+
             }
 
             Method (_Q88, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x88, DBG8)
+                \rmdt.p1("EC _Q88 enter")
+Store (0x88, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0x6F, One)
                 }
+\rmdt.p1("EC _Q88 exit")
+
             }
 
             Method (_Q89, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x89, DBG8)
+                \rmdt.p1("EC _Q89 enter")
+Store (0x89, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xC5, CDON)
                 }
+\rmdt.p1("EC _Q89 exit")
+
             }
 
             Method (_Q93, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x93, DBG8)
+                \rmdt.p1("EC _Q93 enter")
+Store (0x93, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xD1, One)
                 }
+\rmdt.p1("EC _Q93 exit")
+
             }
 
             Method (_Q94, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x94, DBG8)
+                \rmdt.p1("EC _Q94 enter")
+Store (0x94, DBG8)
                 If (CondRefOf (SMGR))
                 {
                     SMGR (0xF6, KBLL)
                 }
+\rmdt.p1("EC _Q94 exit")
+
             }
 
             Method (_Q95, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x95, DBG8)
+                \rmdt.p1("EC _Q95 enter")
+Store (0x95, DBG8)
+\rmdt.p1("EC _Q95 exit")
+
             }
 
             Method (_Q96, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x96, DBG8)
+                \rmdt.p1("EC _Q96 enter")
+Store (0x96, DBG8)
                 LPST ()
+\rmdt.p1("EC _Q96 exit")
+
             }
 
             Method (_Q97, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x97, DBG8)
+                \rmdt.p1("EC _Q97 enter")
+Store (0x97, DBG8)
                 LPST ()
+\rmdt.p1("EC _Q97 exit")
+
             }
 
             Method (_Q98, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x98, DBG8)
+                \rmdt.p1("EC _Q98 enter")
+Store (0x98, DBG8)
                 Notify (ALSD, 0x80)
+\rmdt.p1("EC _Q98 exit")
+
             }
 
             Method (_Q99, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0x99, DBG8)
+                \rmdt.p1("EC _Q99 enter")
+Store (0x99, DBG8)
+\rmdt.p1("EC _Q99 exit")
+
             }
 
             Method (_Q9A, 0, NotSerialized)  // _Qxx: EC Query
             {
-                P80C (0x9A)
+                \rmdt.p1("EC _Q9A enter")
+P80C (0x9A)
+\rmdt.p1("EC _Q9A exit")
+
             }
 
             Method (_Q9B, 0, NotSerialized)  // _Qxx: EC Query
             {
-                P80C (0x9B)
+                \rmdt.p1("EC _Q9B enter")
+P80C (0x9B)
                 Store ("reserve", Debug)
+\rmdt.p1("EC _Q9B exit")
+
             }
 
             Method (_Q9D, 0, NotSerialized)  // _Qxx: EC Query
             {
-                P80C (0x9D)
+                \rmdt.p1("EC _Q9D enter")
+P80C (0x9D)
                 LPST ()
+\rmdt.p1("EC _Q9D exit")
+
             }
 
             Method (_QD1, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0xD1, DBG8)
+                \rmdt.p1("EC _QD1 enter")
+Store (0xD1, DBG8)
                 If (LEqual (PTHF, Zero))
                 {
                     Notify (^^^PEG0.PEGP, 0xD1)
@@ -59366,11 +59507,14 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
                 {
                     Notify (^^^PEG0.PEGP, 0xD5)
                 }
+\rmdt.p1("EC _QD1 exit")
+
             }
 
             Method (_QD2, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0xD2, DBG8)
+                \rmdt.p1("EC _QD2 enter")
+Store (0xD2, DBG8)
                 If (LEqual (PTHF, Zero))
                 {
                     Notify (^^^PEG0.PEGP, 0xD1)
@@ -59379,11 +59523,14 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
                 {
                     Notify (^^^PEG0.PEGP, 0xD5)
                 }
+\rmdt.p1("EC _QD2 exit")
+
             }
 
             Method (_QD3, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0xD3, DBG8)
+                \rmdt.p1("EC _QD3 enter")
+Store (0xD3, DBG8)
                 If (LEqual (PTHF, Zero))
                 {
                     Notify (^^^PEG0.PEGP, 0xD2)
@@ -59392,11 +59539,14 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
                 {
                     Notify (^^^PEG0.PEGP, 0xD5)
                 }
+\rmdt.p1("EC _QD3 exit")
+
             }
 
             Method (_QD4, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0xD4, DBG8)
+                \rmdt.p1("EC _QD4 enter")
+Store (0xD4, DBG8)
                 If (LEqual (PTHF, Zero))
                 {
                     Notify (^^^PEG0.PEGP, 0xD3)
@@ -59405,11 +59555,14 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
                 {
                     Notify (^^^PEG0.PEGP, 0xD5)
                 }
+\rmdt.p1("EC _QD4 exit")
+
             }
 
             Method (_QD5, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0xD5, DBG8)
+                \rmdt.p1("EC _QD5 enter")
+Store (0xD5, DBG8)
                 If (LEqual (PTHF, Zero))
                 {
                     Notify (^^^PEG0.PEGP, 0xD4)
@@ -59418,18 +59571,26 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
                 {
                     Notify (^^^PEG0.PEGP, 0xD5)
                 }
+\rmdt.p1("EC _QD5 exit")
+
             }
 
             Method (_QD6, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0xD6, DBG8)
+                \rmdt.p1("EC _QD6 enter")
+Store (0xD6, DBG8)
                 Notify (^^^PEG0.PEGP, 0xD5)
+\rmdt.p1("EC _QD6 exit")
+
             }
 
             Method (_QDA, 0, NotSerialized)  // _Qxx: EC Query
             {
-                Store (0xDA, DBG8)
+                \rmdt.p1("EC _QDA enter")
+Store (0xDA, DBG8)
                 Notify (^^^PEG0.PEGP, 0xD5)
+\rmdt.p1("EC _QDA exit")
+
             }
 
             Device (ADP1)
@@ -59672,5 +59833,14 @@ DefinitionBlock ("", "DSDT", 2, "GBT   ", "GBTUACPI", 0x01072009)
         Or(Arg0, ShiftLeft(Local0, 8), Local0)
         Return(Local0)
     }
+    External (RMDT, DeviceObj)
+    External (RMDT.PUSH, MethodObj)
+    External (RMDT.P1, MethodObj)
+    External (RMDT.P2, MethodObj)
+    External (RMDT.P3, MethodObj)
+    External (RMDT.P4, MethodObj)
+    External (RMDT.P5, MethodObj)
+    External (RMDT.P6, MethodObj)
+    External (RMDT.P7, MethodObj)
 }
 
