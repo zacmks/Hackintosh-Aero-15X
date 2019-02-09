@@ -57,6 +57,7 @@ Then, inside each folder:
 - [x] CPU power management
 - [x] Battery indicator
 - [x] USB PM
+- [x] Shutdown/Sleep/Restart
 
 **Graphics**
 - [x] Intel graphics card
@@ -69,12 +70,7 @@ Then, inside each folder:
 
 ## Not working/Issues
 - [ ] USB based devices stuttering (Keyboard;BT Keyboard;Mouse;BT Mouse;)
-- [ ] Shutdown/Sleep/Restart
-- [ ] Thunderbolt hotplug
+- [ ] Thunderbolt hotplug (does work if plugged in on boot)
 
-
-## Details about Aero 15X V8 hackintosh
-
-Looks like this machine ACPI specs are not much compatible with Apple's Mac/Macbooks ACPI
-
-Thus, it might need some extensive patching compared to other machines, such as Lenovo's Ideapad series
+## Minor improvements needed
+- [ ] Map ACPI Brigtness UP/DOWN keys
