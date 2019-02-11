@@ -26,11 +26,9 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
             // USB Power Properties for Sierra (using USBInjectAll injection)
             "AppleBusPowerController", Package()
             {
-                // these values from iMac17,1
-                "kUSBSleepPortCurrentLimit", 2100,
-                "kUSBSleepPowerSupply", 5100,
-                "kUSBWakePortCurrentLimit", 2100,
-                "kUSBWakePowerSupply", 5100,
+                // these values from MacBookPro15,1
+                "kUSBSleepPortCurrentLimit", 3000,
+                "kUSBWakePortCurrentLimit", 3000,
             },
             "8086_a36d", Package()
             {
