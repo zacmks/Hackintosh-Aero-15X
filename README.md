@@ -74,3 +74,9 @@ Then, inside each folder:
 
 ## Minor improvements needed
 - [ ] Map ACPI Brigtness UP/DOWN keys
+
+## Mojave support
+- Tested this on Mojave through App Store update and it works right oob after the setup
+- However, please note that I'll not update this as often for Mojave as for High Sierra since I'm waiting for Nvidia Graphics support on Mojave as well as APFS support on Clonezilla/partclone
+   - https://github.com/zacmks/Hackintosh-Aero-15X/issues/4
+
