@@ -69,7 +69,6 @@ Then, inside each folder:
 - [x] Touchpad
 
 ## Not working/Issues
-- [ ] USB based devices stuttering (Keyboard;BT Keyboard;Mouse;BT Mouse;)
 - [ ] Thunderbolt hotplug (does work if plugged in on boot)
 
 ## Minor improvements needed
