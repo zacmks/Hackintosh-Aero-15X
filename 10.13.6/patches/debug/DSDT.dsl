@@ -22382,7 +22382,8 @@ Return (WAKP)
     {
         Method (_L69, 0, Serialized)  // _Lxx: Level-Triggered GPE
         {
-            \_SB.PCI0.RP01.HPME ()
+            \rmdt.p1("GPE _L69 enter")
+\_SB.PCI0.RP01.HPME ()
             \_SB.PCI0.RP02.HPME ()
             \_SB.PCI0.RP03.HPME ()
             \_SB.PCI0.RP04.HPME ()
@@ -22424,11 +22425,14 @@ Return (WAKP)
                 \_SB.PCI0.PEG2.HPME ()
                 Notify (\_SB.PCI0.PEG2, 0x02)
             }
+\rmdt.p1("GPE _L69 exit")
+
         }
 
         Method (_L61, 0, NotSerialized)  // _Lxx: Level-Triggered GPE
         {
-            Add (L01C, One, L01C)
+            \rmdt.p1("GPE _L61 enter")
+Add (L01C, One, L01C)
             P8XH (One, L01C)
             If (LAnd (LNotEqual (\_SB.PCI0.RP01.VDID, 0xFFFFFFFF), \_SB.PCI0.RP01.HPSX))
             {
@@ -23097,11 +23101,14 @@ Return (WAKP)
                     Store (One, \_SB.PCI0.RP24.HPSX)
                 }
             }
+\rmdt.p1("GPE _L61 exit")
+
         }
 
         Method (_L62, 0, NotSerialized)  // _Lxx: Level-Triggered GPE
         {
-            Store (Zero, GPEC)
+            \rmdt.p1("GPE _L62 enter")
+Store (Zero, GPEC)
             If (CondRefOf (\_SB.DTSE))
             {
                 If (LGreaterEqual (\_SB.DTSE, One))
@@ -23133,26 +23140,35 @@ Return (WAKP)
 
                 Store (Zero, \_SB.ITBI)
             }
+\rmdt.p1("GPE _L62 exit")
+
         }
 
         Method (_L66, 0, NotSerialized)  // _Lxx: Level-Triggered GPE
         {
-            If (LAnd (\_SB.PCI0.GFX0.GSSE, LNot (GSMI)))
+            \rmdt.p1("GPE _L66 enter")
+If (LAnd (\_SB.PCI0.GFX0.GSSE, LNot (GSMI)))
             {
                 \_SB.PCI0.GFX0.GSCI ()
             }
+\rmdt.p1("GPE _L66 exit")
+
         }
 
         Method (_L12, 0, NotSerialized)  // _Lxx: Level-Triggered GPE
         {
-            \_SB.SHPO (0x030A0012, One)
+            \rmdt.p1("GPE _L12 enter")
+\_SB.SHPO (0x030A0012, One)
             Notify (\_SB.PCI0.RP21, 0x02)
+\rmdt.p1("GPE _L12 exit")
+
         }
 
         Name (PRES, One)
         Method (_L6F, 0, NotSerialized)  // _Lxx: Level-Triggered GPE
         {
-            If (LEqual (RTD3, One))
+            \rmdt.p1("GPE _L6F enter")
+If (LEqual (RTD3, One))
             {
                 If (CondRefOf (\_GPE.AL6F))
                 {
@@ -23211,6 +23227,8 @@ Return (WAKP)
                     }
                 }
             }
+\rmdt.p1("GPE _L6F exit")
+
         }
     }
 
