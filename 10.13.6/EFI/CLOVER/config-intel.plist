@@ -121,13 +121,53 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
+					<string>Batt, change WMBD to XMBD</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>T1NJRA==</data>
+					<data>V01CRA==</data>
 					<key>Replace</key>
-					<data>WFNJRA==</data>
+					<data>WE1CRA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Batt, change WMBC to XMBC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>V01CQw==</data>
+					<key>Replace</key>
+					<data>WE1CQw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Batt, change _BIF to XBIF</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0JJRg==</data>
+					<key>Replace</key>
+					<data>WEJJRg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Batt, change _BST to XBST</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0JTVA==</data>
+					<key>Replace</key>
+					<data>WEJTVA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Batt, change BATS to BATX</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>QkFUUw==</data>
+					<key>Replace</key>
+					<data>QkFUWA==</data>
 				</dict>
 			</array>
 		</dict>
