@@ -6,6 +6,10 @@
 	<dict>
 		<key>AutoMerge</key>
 		<true/>
+		<key>DisabledAML</key>
+		<array>
+			<string>SSDT-Disable-DGPU.aml</string>
+		</array>
 		<key>DSDT</key>
 		<dict>
 			<key>Debug</key>
@@ -169,6 +173,34 @@
 					<key>Replace</key>
 					<data>QkFUWA==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHC to XHC5 on TBDU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					WEhDXwhfQURSAA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEhDNQhfQURSAA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change TBDU.XHC to TBDU.XHC5</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					VEJEVVhIQ18=
+					</data>
+					<key>Replace</key>
+					<data>
+					VEJEVVhIQzU=
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -197,7 +229,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-cflbkltfix igfxcflbklt=1 applbkl=0</string>
+		<string>-cflbkltfix igfxcflbklt=1 applbkl=0 brcmfx-country=#a</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -231,7 +263,7 @@
 				<key>device-id</key>
 				<data>mz4AAA==</data>
 				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
+				<data>#AQAAAA==</data>
 				<key>enable-cfl-backlight-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
@@ -254,6 +286,11 @@
 				<data>AAAwAQ==</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>AAAAgA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
+			<dict>
+				<key>name</key>
+				<string>pci8086,9cc1</string>
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
@@ -444,7 +481,7 @@
 		<key>InjectSystemID</key>
 		<true/>
 		<key>NvidiaWeb</key>
-		<false/>
+		<true/>
 	</dict>
 </dict>
 </plist>
