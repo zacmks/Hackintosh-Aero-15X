@@ -14,8 +14,6 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddPNLF</key>
-				<true/>
 				<key>FixAirport</key>
 				<true/>
 				<key>FixHPET</key>
@@ -183,20 +181,6 @@
 					WEhDNQhfQURSAA==
 					</data>
 				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change TBDU.XHC to TBDU.XHC5</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					VEJEVVhIQ18=
-					</data>
-					<key>Replace</key>
-					<data>
-					VEJEVVhIQzU=
-					</data>
-				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -204,12 +188,6 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>xh_rvp10</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -225,7 +203,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-cflbkltfix igfxcflbklt=1 applbkl=0 brcmfx-country=#a</string>
+		<string>igfxcflbklt=1 brcmfx-country=#a</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -289,8 +267,6 @@
 				<string>pci8086,9cc1</string>
 			</dict>
 		</dict>
-		<key>SetIntelBacklight</key>
-		<true/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -439,20 +415,6 @@
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
 				<data>SW50ZXJuYWw=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>disable port limit in XHCI kext (credit RehabMan, based prior PMHeart patch)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>g32IDw+DpwQAAA==</data>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g32ID5CQkJCQkA==</data>
 			</dict>
 		</array>
 	</dict>
