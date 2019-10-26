@@ -18,8 +18,6 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddPNLF</key>
-				<true/>
 				<key>FixAirport</key>
 				<true/>
 				<key>FixHPET</key>
@@ -173,6 +171,20 @@
 					<key>Replace</key>
 					<data>QkFUWA==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHC to XHC5 on TBDU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					WEhDXwhfQURSAA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEhDNQhfQURSAA==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -180,12 +192,6 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>xh_rvp10</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -201,7 +207,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-cflbkltfix igfxcflbklt=1 applbkl=0</string>
+		<string>igfxcflbklt=1 brcmfx-country=#a</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -231,37 +237,20 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
-				<key>device-id</key>
-				<data>mz4AAA==</data>
+				<data>CQCbPg==</data>
 				<key>#disable-external-gpu</key>
 				<data>AQAAAA==</data>
 				<key>enable-cfl-backlight-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con2-index</key>
-				<data>/////w==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-portcount</key>
-				<data>AgAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
+			<dict>
+				<key>name</key>
+				<string>pci8086,9cc1</string>
 			</dict>
 		</dict>
-		<key>SetIntelBacklight</key>
-		<true/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
