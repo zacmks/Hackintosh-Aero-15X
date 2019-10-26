@@ -30,7 +30,7 @@ Misc:
 - HD Camera
 ```
 ### Notes:
-- Intel WiFi/Bluetooth card need to be replaced with a compatible one. (Used here: **Broadcom BCM94352Z**)
+- Intel WiFi/Bluetooth card need to be replaced with a compatible one. (Used here: **Broadcom BCM94352Z**, but Dell DW1830 seems to have better support [for Windows users])
 - EFI based
 
 ## How to use this repository:
@@ -59,10 +59,11 @@ Then, inside each folder:
 - [x] Battery indicator
 - [x] USB PM
 - [x] Shutdown/Sleep/Restart
+- [x] Saving/Restoring screen brightness on reboot
 
 **Graphics**
 - [x] Intel graphics card
-- [x] **Nvidia graphics card** (over hdmi)
+- [x] **Nvidia graphics card** (High Sierra only)
 - [x] HDMI (with Nvidia GC)
 
 **Misc**
@@ -71,11 +72,11 @@ Then, inside each folder:
 
 ## Not working/Issues
 - [ ] Thunderbolt hotplug (does work if plugged in on boot)
+- [ ] On Mojave: Nvidia Graphics card (needs drivers release from Nvidia)
 
 ## Minor improvements needed
-- [ ] Map ACPI Brigtness UP/DOWN keys
+- [ ] Map Brightness UP/DOWN keys
+- [ ] Better touchpad support (depends on kext update/release for ELAN touchpad)
 
-## Mojave support
-- Tested this on Mojave through App Store update and it works right oob after the setup
-- However, please note that I'll not update and test this often for Mojave compared to High Sierra since I'm waiting for Nvidia Graphics support on Mojave as well as APFS support on Clonezilla/partclone
-   - https://github.com/zacmks/Hackintosh-Aero-15X/issues/4
+### Thunderbolt 3 notes:
+- Hotplug can be implemented with unlocked bios (changing the BIOS settings) + SSDT
