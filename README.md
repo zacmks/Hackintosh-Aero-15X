@@ -34,7 +34,7 @@ Misc:
 - EFI based
 
 ## How to use this repository:
-- Root folder has the version of Hackintosh (e.g. 10.13.6 - High Sierra)
+- Root folder has the version of Hackintosh (e.g. 10.13.6 - High Sierra, 10.14.6 - Mojave, etc..)
 
 Then, inside each folder:
 - EFI/CLOVER: Clover EFI files (with kexts, configs, patches, etc.)
@@ -80,3 +80,13 @@ Then, inside each folder:
 
 ### Thunderbolt 3 notes:
 - Hotplug can be implemented with unlocked bios (changing the BIOS settings) + SSDT
+
+-----
+## Support status:
+
+- MacOS 10.13 (High Sierra) - Deprecated (might receive a few updates)
+
+- MacOS 10.14 (Mojave) - Current supported version <- Release folder based on this
+
+- MacOS 10.15 (High Sierra) - Community tested (releases based on community feedbacks)
+
