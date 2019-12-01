@@ -1,12 +1,13 @@
 #!/bin/sh
 
 MACOS_VERSIONS=("10.13.6" "10.14.6" "10.15.1")
-
 KEXT_PATH="/EFI/CLOVER/kexts/Other"
 
 if [ "$#" -eq 0 ]
 then
-  echo "Usage: update_kext.sh [file.kext]"
+  echo "Usage: $(basename $0) [file.kext]"
+  echo "Example:"
+  echo "  $(basename $0) /User/user/Downloads/MyKext.kext"
   exit 1
 fi
 
