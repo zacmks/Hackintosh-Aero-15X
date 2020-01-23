@@ -1,9 +1,40 @@
-// Inject Fake EC device
-DefinitionBlock("", "SSDT", 2, "hack", "EC", 0)
+
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "SsdtEC", 0x00001000)
 {
-    Device(_SB.EC)
+    External (_SB_.PCI0.LPCB, DeviceObj)
+    External (_SB_.PCI0.LPCB.ECDV, DeviceObj)
+
+    Scope (\_SB.PCI0.LPCB.ECDV)
     {
-        Name(_HID, "EC000000")
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (0)
+            }
+            Else
+            {
+                Return (0x0F)
+            }
+        }
+    }
+
+    Scope (\_SB.PCI0.LPCB)
+    {
+        Device (EC)
+        {
+            Name (_HID, "ACID0001")  // _HID: Hardware ID
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+        }
     }
 }
-//EOF
