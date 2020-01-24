@@ -33,6 +33,48 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>HPET _CRS to XCRS Rename</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0NSUwigGQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WENSUwigGQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>RTC IRQ 8 Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					IgABeQA=
+					</data>
+					<key>Replace</key>
+					<data>
+					IgAAeQA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>TIMR IRQ 0 Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					IgEAeQA=
+					</data>
+					<key>Replace</key>
+					<data>
+					IgAAeQA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change H_EC to EC</string>
 					<key>Disabled</key>
 					<false/>

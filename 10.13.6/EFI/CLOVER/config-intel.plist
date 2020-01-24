@@ -29,6 +29,48 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>HPET _CRS to XCRS Rename</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0NSUwigGQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WENSUwigGQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>RTC IRQ 8 Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					IgABeQA=
+					</data>
+					<key>Replace</key>
+					<data>
+					IgAAeQA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>TIMR IRQ 0 Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					IgEAeQA=
+					</data>
+					<key>Replace</key>
+					<data>
+					IgAAeQA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change H_EC to EC</string>
 					<key>Disabled</key>
 					<false/>
@@ -395,20 +437,6 @@
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
 				<data>SW50ZXJuYWw=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>disable port limit in XHCI kext (credit RehabMan, based prior PMHeart patch)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>g32IDw+DpwQAAA==</data>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g32ID5CQkJCQkA==</data>
 			</dict>
 		</array>
 	</dict>
