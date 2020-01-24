@@ -14,7 +14,7 @@ fi
 FILENAME=$(basename ${1})
 for x in ${MACOS_VERSIONS[@]}; do
   echo "Updating ${1} for Mac OS ${x}..."
-  PATH="../${x}${KEXT_PATH}/"
+  PATH="../Clover/${x}${KEXT_PATH}/"
 
   if [ -d ${PATH}${FILENAME} ]
   then

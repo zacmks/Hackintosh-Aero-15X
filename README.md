@@ -6,11 +6,12 @@ Please see the following for more details:
 
 https://www.tonymacx86.com/threads/guide-aero-15x-v8-high-sierra-nvidia-graphics.267883/
 
+
 ## Specs
 
 ```
 - Processor: i7-8750H
-- Memory: 32GB 2667 MHz DDR4 (Upgraded, original was 16GB)
+- Memory: 32GB 2667 MHz DDR4 (Upgraded, originally was 16GB)
 - Panel: LCD FHD 144Hz 1920x1080 IPS
 - Graphics: Intel UHD Graphics 630 + NVIDIA GeForce GTX 1070 GDDR5 8GB
 
@@ -34,12 +35,17 @@ Misc:
 - EFI based
 
 ## How to use this repository:
-- Root folder has the version of Hackintosh (e.g. 10.13.6 - High Sierra, 10.14.6 - Mojave, etc..)
 
-Then, inside each folder:
-- EFI/CLOVER: Clover EFI files (with kexts, configs, patches, etc.)
-- Library/Extensions: Has the kext files that needs to be put in your Library/Extensions folder
-- patches: Has the used SSDT/DSDT patches for this version
+### For *Clover* users
+
+`/Clover/` folder has all the necessary files for each version of Hackintosh (e.g. 10.13.6 - High Sierra, 10.14.6 - Mojave, etc..). Then, inside each folder:
+- EFI/CLOVER: All necessary Clover files (with kexts, configs, patches, etc.)
+
+### For *OpenCore* users
+
+`/OpenCore/` has a general config for OpenCore. Consider the current supported macOS version of this repository
+- EFI/OC: All necessary OpenCore files (with kexts, configs, patches, etc.)
+- EFI/Boot: Has other necessary boot files
 
 ## Working
 
@@ -86,7 +92,6 @@ Then, inside each folder:
 
 - MacOS 10.13 (High Sierra) - Deprecated (might receive a few updates)
 
-- MacOS 10.14 (Mojave) - Current supported version <- Release folder based on this
+- MacOS 10.14 (Mojave) - Current supported version
 
 - MacOS 10.15 (High Sierra) - Community tested (releases based on community feedbacks)
-
