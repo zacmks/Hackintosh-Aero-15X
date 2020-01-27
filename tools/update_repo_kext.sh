@@ -1,7 +1,8 @@
 #!/bin/sh
 
-MACOS_VERSIONS=("10.13.6" "10.14.6" "10.15.1")
-KEXT_PATH="/EFI/CLOVER/kexts/Other"
+KEXT_PATHS=("../OpenCore/EFI/OC/Kexts/" \
+    "../Clover/10.13.6/EFI/CLOVER/kexts/Other/" \
+    "../Clover/10.14.6/EFI/CLOVER/kexts/Other/")
 
 if [ "$#" -eq 0 ]
 then
@@ -12,19 +13,18 @@ then
 fi
 
 FILENAME=$(basename ${1})
-for x in ${MACOS_VERSIONS[@]}; do
-  echo "Updating ${1} for Mac OS ${x}..."
-  PATH="../Clover/${x}${KEXT_PATH}/"
+for PATH in ${KEXT_PATHS[@]}; do
+  echo "Updating ${1} on ${PATH}"
 
-  if [ -d ${PATH}${FILENAME} ]
+  if [ -d "${PATH}/${FILENAME}" ]
   then
     echo "Old kext exists, removing..."
-    /bin/rm -rf ${PATH}${FILENAME}
+    /bin/rm -rf ${PATH}/${FILENAME}
   fi
   echo "Copying ${1} to ${PATH}"
   /bin/cp -R ${1} ${PATH}
 
-  echo "Done for Mac OS ${x}"
+  echo "Done for ${x}"
   echo ""
 
 done
