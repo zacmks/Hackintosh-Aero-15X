@@ -69,7 +69,6 @@ Misc:
 
 **Graphics**
 - [x] Intel graphics card
-- [x] **Nvidia graphics card** (High Sierra only)
 - [x] HDMI (with Nvidia GC)
 
 **Misc**
@@ -78,10 +77,9 @@ Misc:
 
 ## Not working/Issues
 - [ ] Thunderbolt hotplug (does work if plugged in on boot)
-- [ ] On Mojave: Nvidia Graphics card (needs drivers release from Nvidia)
+- [ ] Nvidia Graphics card (Only High Sierra with WebDrivers)
 
 ## Minor improvements needed
-- [ ] Map Brightness UP/DOWN keys
 - [ ] Better touchpad support (depends on kext update/release for ELAN touchpad)
 
 ### Thunderbolt 3 notes:
