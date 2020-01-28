@@ -42,7 +42,7 @@ Misc:
 - EFI/OC: All necessary OpenCore files (with kexts, configs, patches, etc.)
 - EFI/Boot: Has other necessary boot files
 
-### [Deprecated] For *Clover* users
+### For *Clover* users [Deprecated]
 
 `/Clover/` folder has all the necessary files for each version of Hackintosh (e.g. 10.13.6 - High Sierra, 10.14.6 - Mojave, etc..). Then, inside each folder:
 - EFI/CLOVER: All necessary Clover files (with kexts, configs, patches, etc.)
