@@ -87,6 +87,23 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
                     },
                 },
             },
+            "8086_15db", Package()
+            {
+                "port-count", Buffer() { 26, 0, 0, 0 },
+                "ports", Package()
+                {
+                    "SSP1", Package()
+                    {
+                        "UsbConnector", 9,
+                        "port", Buffer() { 3, 0, 0, 0 },
+                    },
+                    "SSP2", Package()
+                    {
+                        "UsbConnector", 9,
+                        "port", Buffer() { 4, 0, 0, 0 },
+                    },
+                },
+            },
         })
     }
 }
