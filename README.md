@@ -92,4 +92,4 @@ Misc:
 
 - MacOS 10.14 (Mojave) - Current supported version
 
-- MacOS 10.15 (High Sierra) - Community tested (releases based on community feedbacks)
+- MacOS 10.15 (Catalina) - Community tested (releases based on community feedbacks)
