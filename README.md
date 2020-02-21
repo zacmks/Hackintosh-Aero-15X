@@ -93,3 +93,30 @@ Misc:
 - MacOS 10.14 (Mojave) - Current supported version
 
 - MacOS 10.15 (Catalina) - Community tested (releases based on community feedbacks)
+
+
+## Special thanks to:
+
+* [RehabMan](https://github.com/RehabMan) for his great guides, tools, tutorials, DSDTs, kexts and contribution to the Hackintosh community
+
+* [acidanthera](https://github.com/acidanthera) for all the kexts, tools and contribution to the Hackintosh community
+
+* [vit9696](https://github.com/vit9696) for all the kexts, tools and contribution to the Hackintosh community
+
+* [PMHeart](https://github.com/PMHeart) for all the kexts, tools and contribution to the Hackintosh community
+
+* [al3xtjames](https://github.com/al3xtjames) for all the kexts, tools and contribution to the Hackintosh community
+
+* [Andrey1970AppleLife](https://github.com/Andrey1970AppleLife) for all the kexts, tools and contribution to the Hackintosh community
+
+* [corpnewt](https://github.com/corpnewt) for SSDTTime
+
+* [headkaze](https://github.com/headkaze) for his tools and great tutorials
+
+* [OpenCore Project](https://github.com/acidanthera/OpenCorePkg) for making this possible
+
+* [Clover Project](https://sourceforge.net/projects/cloverefiboot/) for creating Clover bootloader and for making this possible
+
+* [aar0npham](https://github.com/aar0npham) for testing and giving great feedbacks
+
+And many many other people with contributions on these projects
