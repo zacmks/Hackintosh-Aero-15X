@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Battery, by zacmks</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -331,7 +331,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Batt, change WMBD to XMBD</string>
+				<string>Batt, change WMBD to XMBD, by zacmks</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -357,7 +357,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Batt, change WMBC to XMBC</string>
+				<string>Batt, change WMBC to XMBC, by zacmks</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -383,7 +383,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Batt, change _BIF to XBIF</string>
+				<string>Batt, change _BIF to XBIF, by zacmks</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -409,7 +409,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Batt, change _BST to XBST</string>
+				<string>Batt, change _BST to XBST, by zacmks</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -435,7 +435,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Batt, change BATS to BATX</string>
+				<string>Batt, change BATS to BATX, by zacmks</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
