@@ -108,6 +108,14 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
+				<string>SSDT-PNLFCFL.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
 				<string>SSDT-PTSWAK.aml</string>
 			</dict>
 			<dict>
@@ -523,6 +531,8 @@
 			<key>ForceExitBootServices</key>
 			<false/>
 			<key>ProtectCsmRegion</key>
+			<false/>
+			<key>ProtectSecureBoot</key>
 			<false/>
 			<key>ProvideCustomSlide</key>
 			<true/>
@@ -996,30 +1006,22 @@
 		<array/>
 		<key>Boot</key>
 		<dict>
-			<key>BuiltinTextRenderer</key>
-			<false/>
-			<key>ConsoleBehaviourOs</key>
-			<string>Graphics</string>
-			<key>ConsoleBehaviourUi</key>
-			<string>Text</string>
-			<key>ConsoleMode</key>
-			<string></string>
 			<key>HibernateMode</key>
 			<string>None</string>
+			<key>HideAuxiliary</key>
+			<false/>
 			<key>HideSelf</key>
 			<true/>
+			<key>PickerAttributes</key>
+			<integer>0</integer>
 			<key>PollAppleHotKeys</key>
 			<true/>
-			<key>Resolution</key>
-			<string>1920x1080@32</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
 			<integer>60</integer>
-			<key>UsePicker</key>
-			<true/>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1046,18 +1048,18 @@
 			<integer>3</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
-			<key>RequireSignature</key>
-			<false/>
-			<key>RequireVault</key>
-			<false/>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
+			<key>Vault</key>
+			<string>Optional</string>
 		</dict>
 		<key>Tools</key>
 		<array>
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Comment</key>
 				<string>Shell</string>
 				<key>Enable</key>
@@ -1072,6 +1074,8 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Comment</key>
 				<string>VerifyMsrE2</string>
 				<key>Enabled</key>
@@ -1084,6 +1088,8 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Comment</key>
 				<string>CleanNvram</string>
 				<key>Enabled</key>
@@ -1194,11 +1200,15 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>VBoxHfs.efi</string>
 			<string>ApfsDriverLoader.efi</string>
+			<string>AppleUsbKbDxe.efi</string>
+			<string>AudioDxe.efi</string>
 			<string>FwRuntimeServices.efi</string>
+			<string>HiiDatabase.efi</string>
+			<string>NvmExpressDxe.efi</string>
 			<string>UsbKbDxe.efi</string>
-			<string>VirtualSmc.efi</string>
+			<string>VBoxHfs.efi</string>
+			<string>XhciDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1219,6 +1229,29 @@
 			<key>TimerResolution</key>
 			<integer>50000</integer>
 		</dict>
+		<key>Output</key>
+		<dict>
+			<key>ClearScreenOnModeSwitch</key>
+			<false/>
+			<key>ConsoleMode</key>
+			<string></string>
+			<key>DirectGopRendering</key>
+			<false/>
+			<key>IgnoreTextInGraphics</key>
+			<true/>
+			<key>ProvideConsoleGop</key>
+			<true/>
+			<key>ReconnectOnResChange</key>
+			<false/>
+			<key>ReplaceTabWithSpace</key>
+			<false/>
+			<key>Resolution</key>
+			<string></string>
+			<key>SanitiseClearScreen</key>
+			<true/>
+			<key>TextRenderer</key>
+			<string>BuiltinGraphics</string>
+		</dict>
 		<key>Protocols</key>
 		<dict>
 			<key>AppleBootPolicy</key>
@@ -1233,8 +1266,6 @@
 			<false/>
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
-			<key>ConsoleControl</key>
-			<true/>
 			<key>DataHub</key>
 			<false/>
 			<key>DeviceProperties</key>
@@ -1250,29 +1281,15 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>AvoidHighAlloc</key>
-			<false/>
-			<key>ClearScreenOnModeSwitch</key>
-			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
-			<key>IgnoreTextInGraphics</key>
-			<true/>
-			<key>ProvideConsoleGop</key>
-			<true/>
-			<key>ReconnectOnResChange</key>
-			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
-			<key>ReplaceTabWithSpace</key>
 			<false/>
 			<key>RequestBootVarFallback</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
-			<true/>
-			<key>SanitiseClearScreen</key>
 			<true/>
 			<key>UnblockFsConnect</key>
 			<false/>
