@@ -18,7 +18,7 @@
 #KEXT_PATHS=("../OpenCore/EFI/OC/Kexts/" \
 #    "../Clover/10.13.6/EFI/CLOVER/kexts/Other/" \
 #    "../Clover/10.14.6/EFI/CLOVER/kexts/Other/")
-KEXT_PATHS=("../OpenCore/EFI/OC/Kexts/)
+KEXT_PATHS=("../OpenCore/EFI/OC/Kexts/")
 
 if [ "$#" -eq 0 ]
 then
