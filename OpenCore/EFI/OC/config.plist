@@ -1062,8 +1062,6 @@
 				<false/>
 				<key>Comment</key>
 				<string>Shell</string>
-				<key>Enable</key>
-				<true/>
 				<key>Enabled</key>
 				<true/>
 				<key>Name</key>
