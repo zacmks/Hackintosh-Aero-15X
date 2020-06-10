@@ -40,7 +40,7 @@ for PATH in ${KEXT_PATHS[@]}; do
   echo "Copying ${1} to ${PATH}"
   /bin/cp -R ${1} ${PATH}
 
-  echo "Done for ${x}"
+  echo "Done for ${FILENAME}"
   echo ""
 
 done
