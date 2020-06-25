@@ -1,6 +1,6 @@
 # Hackintosh-Aero-15X
 Hackintosh for Gigabyte Aero 15X V8
-Tested and working on macOS High Sierra and Mojave
+Tested and working on macOS High Sierra, Mojave and Catalina
 
 Please see the following for more details:
 
@@ -90,9 +90,9 @@ Misc:
 
 - MacOS 10.13 (High Sierra) - Clover/Deprecated (Will not receive future updates)
 
-- MacOS 10.14 (Mojave) - Current supported version
+- MacOS 10.14 (Mojave) - OpenCore/Old Stable
 
-- MacOS 10.15 (Catalina) - Community tested (releases based on community feedbacks)
+- MacOS 10.15 (Catalina) - Current supported version
 
 
 ## Special thanks to:
