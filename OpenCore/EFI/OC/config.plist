@@ -151,10 +151,36 @@
 				<string>SSDT-PLUG.aml</string>
 			</dict>
 		</array>
-		<key>Block</key>
+		<key>Delete</key>
 		<array/>
 		<key>Patch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>change ECDV to EC</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>RUNEVg==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>RUNfXw==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>HPET _CRS to XCRS Rename</string>
@@ -530,17 +556,21 @@
 			<true/>
 			<key>ForceExitBootServices</key>
 			<false/>
-			<key>ProtectCsmRegion</key>
+			<key>ProtectMemoryRegions</key>
 			<false/>
 			<key>ProtectSecureBoot</key>
 			<false/>
+			<key>ProtectUefiServices</key>
+			<false/>
 			<key>ProvideCustomSlide</key>
 			<true/>
+			<key>RebuildAppleMemoryMap</key>
+			<false/>
 			<key>SetupVirtualMap</key>
 			<true/>
-			<key>ShrinkMemoryMap</key>
-			<false/>
 			<key>SignalAppleOS</key>
+			<false/>
+			<key>SyncRuntimePermissions</key>
 			<false/>
 		</dict>
 	</dict>
@@ -562,10 +592,6 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>CQCbPg==</data>
-				<key>enable-cfl-backlight-fix</key>
-				<data>AQAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
 			</dict>
 		</dict>
 	</dict>
@@ -799,6 +825,22 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>HibernationFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/HibernationFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -944,18 +986,6 @@
 		</array>
 		<key>Block</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleTyMCEDriver</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-			</dict>
 		</array>
 		<key>Emulate</key>
 		<dict>
@@ -994,24 +1024,20 @@
 			<true/>
 			<key>ThirdPartyDrives</key>
 			<false/>
-			<key>ThirdPartyTrim</key>
-			<false/>
 			<key>XhciPortLimit</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>Misc</key>
 	<dict>
-		<key>BlessOverride</key>
-		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
 			<false/>
-			<key>HideSelf</key>
-			<true/>
+			<key>ConsoleAttributes</key>
+			<integer>0</integer>
 			<key>PickerAttributes</key>
 			<integer>0</integer>
 			<key>PollAppleHotKeys</key>
@@ -1025,6 +1051,10 @@
 		</dict>
 		<key>Debug</key>
 		<dict>
+			<key>AppleDebug</key>
+			<false/>
+			<key>ApplePanic</key>
+			<false/>
 			<key>DisableWatchDog</key>
 			<false/>
 			<key>DisplayDelay</key>
@@ -1035,7 +1065,8 @@
 			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
-		<array/>
+		<array>
+		</array>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -1044,6 +1075,10 @@
 			<false/>
 			<key>AuthRestart</key>
 			<false/>
+			<key>BlacklistAppleUpdate</key>
+			<true/>
+			<key>BootProtect</key>
+			<string>None</string>
 			<key>ExposeSensitiveData</key>
 			<integer>3</integer>
 			<key>HaltLevel</key>
@@ -1067,7 +1102,7 @@
 				<key>Name</key>
 				<string>OpenCore Shell</string>
 				<key>Path</key>
-				<string>Shell.efi</string>
+				<string>OpenShell.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1105,24 +1140,36 @@
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
+				<key>DefaultBackgroundColor</key>
+				<data>AAAAAA==</data>
 				<key>UIScale</key>
 				<data>AQ==</data>
+			</dict>
+			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
+			<dict>
+				<key>rtc-blacklist</key>
+				<data></data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>dart=0 igfxcflbklt=1 -cdfon brcmfx-country=#a</string>
+				<string>dart=0 -cdfon igfxcflbklt=1 brcmfx-country=#a</string>
 				<key>nvda_drv</key>
 				<data></data>
 				<key>prev-lang:kbd</key>
 				<data></data>
 			</dict>
 		</dict>
-		<key>Block</key>
+		<key>Delete</key>
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<array>
 				<string>UIScale</string>
+				<string>DefaultBackgroundColor</string>
+			</array>
+			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
+			<array>
+				<string>rtc-blacklist</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
@@ -1199,17 +1246,24 @@
 		<key>Drivers</key>
 		<array>
 			<string>ApfsDriverLoader.efi</string>
-			<string>AppleUsbKbDxe.efi</string>
-			<string>AudioDxe.efi</string>
-			<string>FwRuntimeServices.efi</string>
 			<string>HiiDatabase.efi</string>
 			<string>NvmExpressDxe.efi</string>
-			<string>UsbKbDxe.efi</string>
+			<string>OpenCanopy.efi</string>
+			<string>OpenRuntime.efi</string>
+			<string>OpenUsbKbDxe.efi</string>
 			<string>VBoxHfs.efi</string>
 			<string>XhciDxe.efi</string>
+			<string>#UsbMouseDxe.efi</string>
+			<string>#Ps2KeyboardDxe.efi</string>
+			<string>#Ps2MouseDxe.efi</string>
+			<string>#CrScreenshotDxe.efi</string>
+			<string>#ExFatDxe.efi</string>
+			<string>#PartitionDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
+			<key>KeyFiltering</key>
+			<false/>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
 			<key>KeyMergeThreshold</key>
@@ -1250,7 +1304,7 @@
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 		</dict>
-		<key>Protocols</key>
+		<key>ProtocolOverrides</key>
 		<dict>
 			<key>AppleBootPolicy</key>
 			<false/>
@@ -1259,6 +1313,8 @@
 			<key>AppleImageConversion</key>
 			<false/>
 			<key>AppleKeyMap</key>
+			<false/>
+			<key>AppleRtcRam</key>
 			<false/>
 			<key>AppleSmcIo</key>
 			<false/>
@@ -1279,16 +1335,18 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>DeduplicateBootOrder</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<false/>
-			<key>RequestBootVarFallback</key>
-			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
+			<key>TscSyncTimeout</key>
+			<integer>0</integer>
 			<key>UnblockFsConnect</key>
 			<false/>
 		</dict>

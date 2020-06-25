@@ -20,9 +20,9 @@ DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
     External(_SB.PCI0.AMW0.XMBC, MethodObj)
     External(_SB.PCI0.AMW0.DBG8, FieldUnitObj)
     
-    External(_SB.PCI0.LPCB.ECDV, DeviceObj)
-    External(_SB.PCI0.LPCB.ECDV.BAT1, DeviceObj)
-    External(_SB.PCI0.LPCB.ECDV.FBFC, IntObj)
+    External(_SB.PCI0.LPCB.EC, DeviceObj)
+    External(_SB.PCI0.LPCB.EC.BAT1, DeviceObj)
+    External(_SB.PCI0.LPCB.EC.FBFC, IntObj)
     External(\B1SC, FieldUnitObj)
     External(\B1SS, FieldUnitObj)
     
@@ -43,8 +43,8 @@ DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
         {
             If (LEqual (Arg1, 0x68)) {
                 Store (0x69, DBG8)
-                Store (Arg2, B1B3(^^LPCB.ECDV.FNW0,^^LPCB.ECDV.FNW1,^^LPCB.ECDV.FNW2))
-                Return (B1B3(^^LPCB.ECDV.FNW0,^^LPCB.ECDV.FNW1,^^LPCB.ECDV.FNW2))
+                Store (Arg2, B1B3(^^LPCB.EC.FNW0,^^LPCB.EC.FNW1,^^LPCB.EC.FNW2))
+                Return (B1B3(^^LPCB.EC.FNW0,^^LPCB.EC.FNW1,^^LPCB.EC.FNW2))
             } Else {
                 Return (XMBD(Arg0, Arg1, Arg2))
             }
@@ -56,17 +56,17 @@ DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
             {
                 Case (0xE4)
                 {
-                    Return (B1B2(^^LPCB.ECDV.RPMX,^^LPCB.ECDV.RPMY))
+                    Return (B1B2(^^LPCB.EC.RPMX,^^LPCB.EC.RPMY))
                 }
                 Case (0xE5)
                 {
-                    Return (B1B2(^^LPCB.ECDV.RMPX,^^LPCB.ECDV.RMPY))
+                    Return (B1B2(^^LPCB.EC.RMPX,^^LPCB.EC.RMPY))
                 }
                 Case (0x68)
                 {
-                    Store (Arg2, ^^LPCB.ECDV.XFNR)
+                    Store (Arg2, ^^LPCB.EC.XFNR)
                     Sleep (0x64)
-                    Return (B1B2(^^LPCB.ECDV.XFNX,^^LPCB.ECDV.XFNY))
+                    Return (B1B2(^^LPCB.EC.XFNX,^^LPCB.EC.XFNY))
                 }
                 Default
                 {
@@ -76,7 +76,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
         }
     }
     
-    Scope (_SB.PCI0.LPCB.ECDV)
+    Scope (_SB.PCI0.LPCB.EC)
     {
         OperationRegion (XCF2, EmbeddedControl, Zero, 0x0100)
         Field (XCF2, ByteAcc, Lock, Preserve)
