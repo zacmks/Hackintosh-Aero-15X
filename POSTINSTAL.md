@@ -1,0 +1,47 @@
+# Post install extras
+
+Now that you have a working installation on your Aero 15X laptop, there are still a few things that you can improve on it. This section is not necessary for a working system, but will help fix small issues and you'll have some more flexibility on your installation.
+
+This is not part of the main instructions because the tweaks here are not necessary for a working system and involves changing the system BIOS and some of it's factory locked configs (which can brick your machine). 
+
+**You have been warned, please proceed with caution.**
+
+---
+## Custom/Unlocked BIOS + USB-C Hotlug
+
+Headkaze has an [excelent guide](https://www.bios-mods.com/forum/Thread-Gigabyte-Aero-15-v8-FB0A-BIOS-Unlocked) on how to unlock your BIOS. This should help you to access some extra configurations on your system, including USB-C hotplug. To unlock your BIOS just follow his [guide](https://www.bios-mods.com/forum/Thread-Gigabyte-Aero-15-v8-FB0A-BIOS-Unlocked).
+
+Remember that changing you BIOS **can permanently brick your machine**. Thus, proceed with caution.
+
+After unlocking your bios, you might want to change your Thunderbolt config so that it could support hotplug. My suggested configuration is as follow:
+
+![TB Config 1](./images/TBCONFIG1.jpg)
+![TB Config 2](./images/TBCONFIG2.jpg)
+![TB Config 3](./images/TBCONFIG3.jpg)
+
+The BIOS config alongside the `SSDT-10-TbtOnPch` ACPI patch should make the Aero 15X's USB-C hotplug work OOB.
+
+---
+
+### Fixing CFG Lock 
+
+Disabling your laptop's CFG Lock could bring more stability to your Hackintosh. See the [Dortania article](https://dortania.github.io/OpenCore-Desktop-Guide/extras/msr-lock) for details. This can be cone using the `setup_var` command on the bundled `modGRUBShell` (/EFI/Tools) after looking on the correct offsets of the variable. Please see the [Dortania's article](https://dortania.github.io/OpenCore-Desktop-Guide/extras/msr-lock) to find your offsets.
+
+If you get and error setting the CFG Lock variable, remember that you need to remove your **BIOS Lock** before, which is another variable on your BIOS (you don't need to unlock the menu's).
+
+On my Aero 15X v8 1080p 144Hz, the offset that I found were:
+- 0xA12 -> To unlock the bios
+- 0x5A4 -> To disable the CFG Lock
+
+Thus, the two commands on modGRUBShell should be:
+```
+setup_var 0xA12 0x00
+setup_var 0x5A4 0x00
+```
+
+After disabling the CFG Lock, you can now turn off the following configs on your OpenCore config.plist:
+
+```
+AppleCpuPmCfgLock
+AppleXcpmCfgLock
+```
