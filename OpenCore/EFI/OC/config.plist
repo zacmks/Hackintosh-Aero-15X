@@ -1026,6 +1026,10 @@
 		<dict>
 			<key>HibernateMode</key>
 			<string>None</string>
+			<key>PickerMode</key>
+			<string>External</string>
+			<key>PickerAttributes</key>
+			<integer>3</integer>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>ConsoleAttributes</key>
@@ -1279,6 +1283,7 @@
 			<string>#Ps2KeyboardDxe.efi</string>
 			<string>#Ps2MouseDxe.efi</string>
 			<string>#CrScreenshotDxe.efi</string>
+			<string>OpenCanopy.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
