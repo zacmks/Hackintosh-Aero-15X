@@ -4,7 +4,8 @@ Now that you have a working installation on your Aero 15X laptop, there are stil
 
 This is not part of the main instructions because the tweaks here are not necessary for a working system and involves changing the system BIOS and some of it's factory locked configs (which can brick your machine). 
 
-**You have been warned, please proceed with caution.**
+**I do not guarantee that this will work and this can brick your machine. You have been warned, proceed with caution.**
+**The BIOS used on my system is the version FB0A. Even if you use the same BIOS, please follow the guides to find your own offsets**
 
 ---
 ## Custom/Unlocked BIOS + USB-C Hotlug
