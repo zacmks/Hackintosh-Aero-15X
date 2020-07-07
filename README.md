@@ -6,7 +6,6 @@ Please see the following for more details:
 
 https://www.tonymacx86.com/threads/guide-aero-15x-v8-high-sierra-nvidia-graphics.267883/
 
-
 ## Specs
 
 ```
@@ -74,18 +73,16 @@ Misc:
 **Misc**
 - [x] Sound (internal speakers + mic jack on/off)
 - [x] Touchpad
+- [x] Thunderbolt hotplug (see: [POSTINSTALL](./POSTINSTAL.md))
 
 ## Not working/Issues
-- [ ] Thunderbolt hotplug (does work if plugged in on boot)
+
 - [ ] Nvidia Graphics card (Only High Sierra with WebDrivers)
 
 ## Minor improvements needed
 - [ ] Better touchpad support (depends on kext update/release for ELAN touchpad)
 
-### Thunderbolt 3 notes:
-- Hotplug can be implemented with unlocked bios (changing the BIOS settings) + SSDT
-
------
+---
 ## Support status:
 
 - MacOS 10.13 (High Sierra) - Clover/Deprecated (Will not receive future updates)
