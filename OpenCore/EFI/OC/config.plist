@@ -1173,7 +1173,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-cdfon -wegnoegpu igfxcflbklt=1 brcmfx-country=#a</string>
+				<string>-cdfon igfxcflbklt=1 brcmfx-country=#a</string>
 				<key>nvda_drv</key>
 				<data></data>
 				<key>prev-lang:kbd</key>
