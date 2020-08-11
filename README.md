@@ -70,8 +70,8 @@ Misc:
 *\* For Sleep to work, add **-wegnoegpu** to your boot-args (Mojave/Catalina+). However, this makes USB-C external monitors undetectable after boot*
 
 *\*\* Prefer to use **SSDT-Disable-DGPU.aml** patch to save power, as it ACPI disables the eGPU. This also makes USB-C external monitors undetectable after boot*
-
-*Don't use "-wegnoegpu" in conjunction with "SSDT-Disable-DGPU.aml", as it's just messy and not needed*
+ 
+**-wegnoegpu** can be used in conjunction with **SSDT-Disable-DGPU.aml**
 
 **Graphics**
 - [x] Intel graphics card
