@@ -79,15 +79,12 @@ Misc:
 
 **Misc**
 - [x] Sound (internal speakers + mic jack on/off)
-- [x] Touchpad
+- [x] Touchpad + Gestures
 - [x] Thunderbolt hotplug (see: [POSTINSTALL](./POSTINSTAL.md))
 
 ## Not working/Issues
 
 - [ ] Nvidia Graphics card (Only High Sierra with WebDrivers)
-
-## Minor improvements needed
-- [ ] Better touchpad support (depends on kext update/release for ELAN touchpad)
 
 ---
 ## Support status:
@@ -122,5 +119,7 @@ Misc:
 * [Clover Project](https://sourceforge.net/projects/cloverefiboot/) for creating Clover bootloader and for making this possible
 
 * [aar0npham](https://github.com/aar0npham) for testing and giving great feedbacks
+
+* [BAndysc](https://github.com/BAndysc) for ELAN touchpad support
 
 And many many other people with contributions on these projects
