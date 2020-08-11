@@ -63,12 +63,19 @@ Misc:
 - [x] CPU power management
 - [x] Battery indicator
 - [x] USB PM
-- [x] Shutdown/Sleep/Restart
+- [x] Shutdown/*Sleep/Restart
 - [x] Saving/Restoring screen brightness on reboot
+- [x] **Disable eGPU to save power
+
+*\* For Sleep to work, add **-wegnoegpu** to your boot-args (Mojave/Catalina+). However, this makes USB-C external monitors undetectable after boot*
+
+*\*\* Prefer to use **SSDT-Disable-DGPU.aml** patch to save power, as it ACPI disables the eGPU. This also makes USB-C external monitors undetectable after boot*
+
+*Don't use "-wegnoegpu" in conjunction with "SSDT-Disable-DGPU.aml", as it's just messy and not needed*
 
 **Graphics**
 - [x] Intel graphics card
-- [x] HDMI (with Nvidia GC)
+- [x] HDMI (**High Sierra only** with Nvidia GC)
 
 **Misc**
 - [x] Sound (internal speakers + mic jack on/off)
