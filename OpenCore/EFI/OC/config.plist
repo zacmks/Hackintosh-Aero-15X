@@ -577,6 +577,11 @@
 				<key>name</key>
 				<string>pci8086,9cc1</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<data>AwAAAA==</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -1180,7 +1185,7 @@
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>boot-args</key>
-				<string>alcid=3 -cdfon igfxcflbklt=1 brcmfx-country=#a</string>
+				<string>-cdfon igfxcflbklt=1 brcmfx-country=#a</string>
 				<key>prev-lang:kbd</key>
 				<data></data>
 			</dict>
