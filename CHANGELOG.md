@@ -6,9 +6,19 @@ Notable changes for the project.
 
 - TBD
 
+## [2.3.0] - 2020-08-12
+
+- Added [FAQ](./FAQ.md) section
+- Added extra [POSTINSTALL](./POSTINSTALL.md) instructions
+- Added helper EFIs (reset, modGRUBShell)
+- Added better touchpad support by [@BAndysc](https://github.com/BAndysc)
+- Updated SSDTs
+- Updated kexts
+- Updated OpenCore
+
 ## [2.2.0] - 2020-01-27
 
-- WIP
+- Last Clover release
 
 ## [2.1.1] - 2019-11-05
 
@@ -18,6 +28,8 @@ Notable changes for the project.
 
 - New BrcmPatchRAM3
 - Updated kexts
+- Thunderbolt 3 patches
+- Better device id for graphics
 
 ## [2.0.1] - 2019-10-08
 
@@ -50,7 +62,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/v1.1.0...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.0...HEAD
+[2.3.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.2.0...2.3.0
 [2.2.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.1.1...2.2.0
 [2.1.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.0.1...2.1.0
