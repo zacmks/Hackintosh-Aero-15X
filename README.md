@@ -4,7 +4,7 @@ Tested and working on macOS High Sierra, Mojave and Catalina
 
 Please see the following for more details:
 
-https://www.tonymacx86.com/threads/guide-aero-15x-v8-high-sierra-nvidia-graphics.267883/
+https://www.tonymacx86.com/threads/guide-aero-15x-v8-mojave-catalina.287164/
 
 ## Specs
 
