@@ -30,7 +30,8 @@ Misc:
 - HD Camera
 ```
 ### Notes:
-- Intel WiFi/Bluetooth card need to be replaced with a compatible one. (Used here: **Broadcom BCM94352Z**, but Dell DW1830 seems to have better support [for Windows users])
+- Original Intel WiFi/Bluetooth was replaced with a macOS compatible one. (Used here: **Broadcom BCM94352Z**. But the Dell DW1830 should work better if you are dual-booting with Windows)
+- Intel WiFi/Bluetooth card could make usable with [itlwm](https://github.com/OpenIntelWireless/itlwm) project 
 - EFI based
 
 ## How to use this repository:
