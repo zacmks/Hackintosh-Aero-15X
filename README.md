@@ -31,7 +31,7 @@ Misc:
 ```
 ### Notes:
 - Original Intel WiFi/Bluetooth was replaced with a macOS compatible one. (Used here: **Broadcom BCM94352Z**. But the Dell DW1830 should work better if you are dual-booting with Windows)
-- Intel WiFi/Bluetooth card could make usable with [itlwm](https://github.com/OpenIntelWireless/itlwm) project 
+- Intel WiFi/Bluetooth card can be made usable with [itlwm](https://github.com/OpenIntelWireless/itlwm) project 
 - EFI based
 
 ## How to use this repository:
