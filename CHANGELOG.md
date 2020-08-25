@@ -4,7 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
-- TBD
+- RealtekRTL8111 updated to V2.3.0
 
 ## [2.3.0] - 2020-08-12
 
