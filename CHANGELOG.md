@@ -6,6 +6,7 @@ Notable changes for the project.
 
 - RealtekRTL8111 updated to V2.3.0
 - September 2019 Kext updates
+- OpenCore updated to version 0.6.1
 
 ## [2.3.0] - 2020-08-12
 
