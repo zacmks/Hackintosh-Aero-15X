@@ -5,6 +5,7 @@ Notable changes for the project.
 ## [Unreleased]
 
 - RealtekRTL8111 updated to V2.3.0
+- September 2019 Kext updates
 
 ## [2.3.0] - 2020-08-12
 
