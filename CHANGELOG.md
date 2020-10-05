@@ -6,6 +6,13 @@ Notable changes for the project.
 
 -
 
+## [2.3.2] - 2020-10-05
+
+- October 2019 Kext updates
+- OpenCore updated to version 0.6.2
+- Removed BT4LEContinuityFixup in favor to OpenCore BT config
+- Rollback RealtekRTL8111 to v2.2.2 due some errors
+
 ## [2.3.1] - 2020-09-09
 
 - RealtekRTL8111 updated to V2.3.0
@@ -68,7 +75,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.1...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.2...HEAD
+[2.3.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.1...2.3.2
 [2.3.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.0...2.3.1
 [2.3.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.2.0...2.3.0
 [2.2.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.1.1...2.2.0
