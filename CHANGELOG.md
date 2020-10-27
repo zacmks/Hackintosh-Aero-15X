@@ -4,6 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- Working Laptop Ambiend Light Sensor
 - Added restart entry for OC
 
 ## [2.3.2] - 2020-10-05
