@@ -65,7 +65,7 @@ Misc:
 - [x] Battery indicator
 - [x] USB PM
 - [x] Shutdown/*Sleep/Restart
-- [x] Saving/Restoring screen brightness on reboot
+- [x] Ambient Light Sensor & Saving/Restoring screen brightness on reboot
 - [x] **Disable eGPU to save power
 
 *\* For Sleep to work, add **-wegnoegpu** to your boot-args (Mojave/Catalina+). However, this makes USB-C external monitors undetectable after boot*
