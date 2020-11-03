@@ -4,12 +4,13 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- November 2020 Kext updates
 - Working Laptop Ambiend Light Sensor
 - Added restart entry for OC
 
 ## [2.3.2] - 2020-10-05
 
-- October 2019 Kext updates
+- October 2020 Kext updates
 - OpenCore updated to version 0.6.2
 - Removed BT4LEContinuityFixup in favor to OpenCore BT config
 - Rollback RealtekRTL8111 to v2.2.2 due some errors
@@ -17,7 +18,7 @@ Notable changes for the project.
 ## [2.3.1] - 2020-09-09
 
 - RealtekRTL8111 updated to V2.3.0
-- September 2019 Kext updates
+- September 2020 Kext updates
 - OpenCore updated to version 0.6.1
 
 ## [2.3.0] - 2020-08-12
