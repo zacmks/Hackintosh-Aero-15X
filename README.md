@@ -78,7 +78,7 @@ Misc:
 **Misc**
 - [x] Sound (internal speakers + mic jack on/off)
 - [x] Touchpad + Gestures
-- [x] Thunderbolt hotplug (see: [POSTINSTALL](./POSTINSTAL.md))
+- [x] Thunderbolt hotplug (see: [POSTINSTALL](./POSTINSTALL.md))
 
 ## Not working/Issues
 

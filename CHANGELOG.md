@@ -4,6 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- Fix type on README (was breaking POSTINSTALL link )
 - Dropped Clover support altogether
 - December 2020 Kext updates
 
