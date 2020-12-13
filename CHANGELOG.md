@@ -4,6 +4,10 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+-
+
+## [2.3.4] - 2020-12-13
+
 - OpenCore updated to version 0.6.4
 - Fix type on README (was breaking POSTINSTALL link )
 - Dropped Clover support altogether
@@ -85,7 +89,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.3...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.4...HEAD
+[2.3.4]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.3...2.3.4
 [2.3.3]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.2...2.3.3
 [2.3.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.1...2.3.2
 [2.3.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.0...2.3.1
