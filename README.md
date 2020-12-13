@@ -36,16 +36,13 @@ Misc:
 
 ## How to use this repository:
 
-### For *OpenCore* users
+### OpenCore
 
-`/OpenCore/` has a general config for OpenCore. Consider the current supported macOS version of this repository
+`/EFI/` has a general config for OpenCore. Consider the current supported macOS version of this repository
 - EFI/OC: All necessary OpenCore files (with kexts, configs, patches, etc.)
 - EFI/Boot: Has other necessary boot files
 
-### For *Clover* users [Deprecated]
-
-`/Clover/` folder has all the necessary files for each version of Hackintosh (e.g. 10.13.6 - High Sierra, 10.14.6 - Mojave, etc..). Then, inside each folder:
-- EFI/CLOVER: All necessary Clover files (with kexts, configs, patches, etc.)
+**Clover is not supported**
 
 ## Working
 
@@ -90,12 +87,13 @@ Misc:
 ---
 ## Support status:
 
-- MacOS 10.13 (High Sierra) - Clover/Deprecated (Will not receive future updates)
+- MacOS 10.13 (High Sierra) - Deprecated (*Could work* but does not receive updates)
 
-- MacOS 10.14 (Mojave) - OpenCore/Old Stable
+- MacOS 10.14 (Mojave) - Old Stable
 
 - MacOS 10.15 (Catalina) - Current supported version
 
+- MacOS 11.0 (Big Sur) - *Reportedly* working
 
 ## Special thanks to:
 
