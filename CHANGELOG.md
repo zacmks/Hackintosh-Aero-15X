@@ -4,7 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
--
+- Added a few OC 0.6.4 config.plist entries (for the sake of completeness)
 
 ## [2.3.4] - 2020-12-13
 

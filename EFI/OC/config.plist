@@ -558,6 +558,8 @@
 		<array/>
 		<key>Quirks</key>
 		<dict>
+			<key>AllowRelocationBlock</key>
+			<false/>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -1161,6 +1163,8 @@
 			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
+			<key>BlacklistAppleUpdate</key>
+			<true/>
 			<key>BootProtect</key>
 			<string>None</string>
 			<key>DmgLoading</key>
@@ -1452,6 +1456,8 @@
 			<false/>
 			<key>Resolution</key>
 			<string>Max</string>
+			<key>ForceResolution</key>
+			<false/>
 			<key>SanitiseClearScreen</key>
 			<true/>
 			<key>UgaPassThrough</key>
