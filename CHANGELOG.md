@@ -4,6 +4,10 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+-
+
+## [2.4.0] - 2020-12-26
+
 - Added a few OC 0.6.4 config.plist entries (for the sake of completeness)
 - OC gui (by ivmm), and adjustments for better labelling
 
@@ -90,7 +94,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.4...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.0...HEAD
+[2.4.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.4...2.4.0
 [2.3.4]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.3...2.3.4
 [2.3.3]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.2...2.3.3
 [2.3.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.1...2.3.2
