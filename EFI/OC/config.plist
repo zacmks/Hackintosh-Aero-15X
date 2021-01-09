@@ -1289,7 +1289,7 @@
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>boot-args</key>
-				<string>-cdfon igfxcflbklt=1 brcmfx-country=#a</string>
+				<string>-cdfon igfxblr=1 brcmfx-country=#a</string>
 				<key>prev-lang:kbd</key>
 				<data></data>
 			</dict>

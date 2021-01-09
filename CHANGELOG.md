@@ -7,6 +7,7 @@ Notable changes for the project.
 - Set the picker mode back to builtin text mode
 - Enabled the disable DGPU patch, as DGPU is only relevant to High Sierra
 - January 2021 Kext updates
+- Updated WhateverGreen's deprecated igfxcflbklt to igfxblr
 
 ## [2.4.0] - 2020-12-26
 
