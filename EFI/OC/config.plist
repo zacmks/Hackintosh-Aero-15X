@@ -1083,6 +1083,8 @@
 			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
+			<key>DisableLinkeditJettison</key>
+			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>ExtendBTFeatureFlags</key>
@@ -1121,6 +1123,8 @@
 			<false/>
 			<key>PickerMode</key>
 			<string>Builtin</string>
+			<key>PickerVariant</key>
+			<string>Auto</string>
 			<key>PickerAttributes</key>
 			<integer>25</integer>
 			<key>PickerAudioAssist</key>
@@ -1289,7 +1293,7 @@
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>boot-args</key>
-				<string>-cdfon igfxblr=1 brcmfx-country=#a</string>
+				<string>-cdfon igfxblr=1 brcmfx-country=#a -wegnoegpu</string>
 				<key>prev-lang:kbd</key>
 				<data></data>
 			</dict>
@@ -1406,6 +1410,8 @@
 			<integer>0</integer>
 			<key>PlayChime</key>
 			<string></string>
+			<key>SetupDelay</key>
+			<integer>0</integer>
 			<key>VolumeAmplifier</key>
 			<integer>0</integer>
 		</dict>
@@ -1461,7 +1467,7 @@
 			<key>ForceResolution</key>
 			<false/>
 			<key>SanitiseClearScreen</key>
-			<true/>
+			<false/>
 			<key>UgaPassThrough</key>
 			<false/>
 			<key>TextRenderer</key>
@@ -1508,8 +1514,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>

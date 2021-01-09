@@ -9,6 +9,7 @@ Notable changes for the project.
 - January 2021 Kext updates
 - Updated WhateverGreen's deprecated igfxcflbklt to igfxblr
 - OpenCore updated to version 0.6.5
+- OC config.plist updates and adjustments
 
 ## [2.4.0] - 2020-12-26
 
