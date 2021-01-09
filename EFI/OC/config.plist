@@ -10,7 +10,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-Disable-DGPU.aml</string>
 			</dict>
@@ -1120,7 +1120,7 @@
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>External</string>
+			<string>Builtin</string>
 			<key>PickerAttributes</key>
 			<integer>25</integer>
 			<key>PickerAudioAssist</key>

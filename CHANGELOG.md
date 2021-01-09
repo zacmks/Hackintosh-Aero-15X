@@ -4,7 +4,8 @@ Notable changes for the project.
 
 ## [Unreleased]
 
--
+- Set the picker mode back to builtin text mode
+- Enabled the disable DGPU patch, as DGPU is only relevant to High Sierra
 
 ## [2.4.0] - 2020-12-26
 
