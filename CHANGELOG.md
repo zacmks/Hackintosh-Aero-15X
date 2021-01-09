@@ -8,6 +8,7 @@ Notable changes for the project.
 - Enabled the disable DGPU patch, as DGPU is only relevant to High Sierra
 - January 2021 Kext updates
 - Updated WhateverGreen's deprecated igfxcflbklt to igfxblr
+- OpenCore updated to version 0.6.5
 
 ## [2.4.0] - 2020-12-26
 
