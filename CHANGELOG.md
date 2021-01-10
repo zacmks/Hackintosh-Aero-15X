@@ -4,6 +4,10 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+-
+
+## [2.4.1] - 2021-01-09
+
 - Set the picker mode back to builtin text mode
 - Enabled the disable DGPU patch, as DGPU is only relevant to High Sierra
 - January 2021 Kext updates
@@ -99,7 +103,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.0...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.1...HEAD
+[2.4.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.0...2.4.1
 [2.4.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.4...2.4.0
 [2.3.4]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.3...2.3.4
 [2.3.3]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.3.2...2.3.3
