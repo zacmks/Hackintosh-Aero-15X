@@ -4,7 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
--
+- Added VoltageShift kext (disabled by default)
 
 ## [2.4.1] - 2021-01-09
 
