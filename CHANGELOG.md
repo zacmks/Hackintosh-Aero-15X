@@ -4,6 +4,8 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- February 2021 Kext updates
+- Updated kexts updater helper script
 - Added VoltageShift kext (disabled by default)
 
 ## [2.4.1] - 2021-01-09
