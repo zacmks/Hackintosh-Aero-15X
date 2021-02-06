@@ -4,6 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- OpenCore updated to version 0.6.6
 - February 2021 Kext updates
 - Updated kexts updater helper script
 - Added VoltageShift kext (disabled by default)
