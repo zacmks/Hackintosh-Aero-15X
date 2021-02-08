@@ -38,7 +38,7 @@ On my Aero 15X v8 1080p 144Hz, the offset that I found were:
 Thus, the two commands on modGRUBShell should be:
 ```
 setup_var 0xA12 0x00
-setup_var 0x5A4 0x00
+setup_var 0x5BE 0x00
 ```
 
 After disabling the CFG Lock, you can now turn off the following configs on your OpenCore config.plist:
