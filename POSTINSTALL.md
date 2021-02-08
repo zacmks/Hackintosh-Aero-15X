@@ -33,7 +33,7 @@ If you get and error setting the CFG Lock variable, remember that you need to re
 
 On my Aero 15X v8 1080p 144Hz, the offset that I found were:
 - 0xA12 -> To unlock the bios
-- 0x5A4 -> To disable the CFG Lock
+- 0x5BE -> To disable the CFG Lock
 
 Thus, the two commands on modGRUBShell should be:
 ```
