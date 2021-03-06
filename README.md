@@ -1,3 +1,5 @@
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?business=4UYU36A9L2PGS&currency_code=BRL)
+
 # Hackintosh-Aero-15X
 Hackintosh for Gigabyte Aero 15X V8
 Tested and working on macOS High Sierra, Mojave and Catalina
