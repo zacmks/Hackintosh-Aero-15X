@@ -7,6 +7,7 @@ Notable changes for the project.
 - April 2021 Kext updates
 - OpenCore updated to version 0.6.8
 - OC's config.plist updates, adjustments and cleanup
+- Repo cleanup
 
 ## [2.4.3] - 2021-03-05
 
