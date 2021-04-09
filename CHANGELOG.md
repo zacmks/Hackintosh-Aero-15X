@@ -4,7 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
-- 
+- Cleanup of unnecessary files
 
 ## [2.4.4] - 2021-04-09
 
