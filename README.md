@@ -1,4 +1,4 @@
-[Buy me a beer!](https://www.paypal.com/donate?business=4UYU36A9L2PGS&currency_code=USD)
+[Buy me a beer ;-)](https://www.paypal.com/donate?business=4UYU36A9L2PGS&currency_code=USD)
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?business=4UYU36A9L2PGS&currency_code=USD)
 
