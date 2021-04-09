@@ -4,6 +4,10 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- 
+
+## [2.4.4] - 2021-04-09
+
 - April 2021 Kext updates
 - OpenCore updated to version 0.6.8
 - OC's config.plist updates, adjustments and cleanup
@@ -120,7 +124,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.3...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.4...HEAD
+[2.4.4]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.3...2.4.4
 [2.4.3]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.2...2.4.3
 [2.4.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.1...2.4.2
 [2.4.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.0...2.4.1
