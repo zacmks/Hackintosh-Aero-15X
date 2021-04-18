@@ -9,7 +9,21 @@ This is not part of the main instructions because the tweaks here are not necess
 **The BIOS used on my system is the version FB0A. Even if you use the same BIOS, please follow the guides to find your own offsets**
 
 ---
-## Custom/Unlocked BIOS + USB-C Hotlug
+
+Post install extras is divided on two sections. Section 1 has stability/feature related changes and section 2 has cosmetic changes:
+
+### Section 1:
+
+#### [1.1 Custom/Unlocked BIOS + USB-C Hotlug](#1.1-Custom/Unlocked-BIOS-+-USB-C-Hotlug)
+
+#### [1.2 Fixing CFG Lock](#1.2-Fixing-CFG-Lock)
+
+### Section 2:
+
+#### [2.1 OpenCore Boot GUI](#2.1-OpenCore-Boot-GUI)
+
+---
+## 1.1 Custom/Unlocked BIOS + USB-C Hotlug
 
 Headkaze has an [excelent guide](https://www.bios-mods.com/forum/Thread-Gigabyte-Aero-15-v8-FB0A-BIOS-Unlocked) on how to unlock your BIOS. This should help you to access some extra configurations on your system, including USB-C hotplug. To unlock your BIOS just follow his [guide](https://www.bios-mods.com/forum/Thread-Gigabyte-Aero-15-v8-FB0A-BIOS-Unlocked).
 
@@ -25,7 +39,7 @@ The BIOS config alongside the `SSDT-10-TbtOnPch` ACPI patch should make the Aero
 
 ---
 
-### Fixing CFG Lock 
+### 1.2 Fixing CFG Lock
 
 Disabling your laptop's CFG Lock could bring more stability to your Hackintosh. See the [Dortania article](https://dortania.github.io/OpenCore-Desktop-Guide/extras/msr-lock) for details. This can be cone using the `setup_var` command on the bundled `modGRUBShell` (/EFI/Tools) after looking on the correct offsets of the variable. Please see the [Dortania's article](https://dortania.github.io/OpenCore-Desktop-Guide/extras/msr-lock) to find your offsets.
 
@@ -47,3 +61,13 @@ After disabling the CFG Lock, you can now turn off the following configs on your
 AppleCpuPmCfgLock
 AppleXcpmCfgLock
 ```
+
+---
+
+### 2.1 OpenCore Boot GUI
+
+Everything is already configured and placed inside the EFI folder.
+
+You only need to change the following properties on the config.plist file:
+
+From `PickerMode: Builtin` to  `PickerMode: External`
