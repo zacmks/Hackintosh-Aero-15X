@@ -4,6 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- Updated USBInjectAll.kext
 - Updated OcBinaryData resources
 - Cleanup of unnecessary files
 
