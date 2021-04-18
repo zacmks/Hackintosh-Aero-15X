@@ -4,6 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- Updated OcBinaryData resources
 - Cleanup of unnecessary files
 
 ## [2.4.4] - 2021-04-09
