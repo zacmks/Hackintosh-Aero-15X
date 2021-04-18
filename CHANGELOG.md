@@ -4,6 +4,11 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- 
+
+## [2.4.5] - 2021-04-18
+
+- Preps for OC audio
 - Updated USBInjectAll.kext
 - Updated OcBinaryData resources
 - Cleanup of unnecessary files
@@ -126,7 +131,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.4...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.5...HEAD
+[2.4.5]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.4...2.4.5
 [2.4.4]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.3...2.4.4
 [2.4.3]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.2...2.4.3
 [2.4.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.1...2.4.2
