@@ -5,6 +5,7 @@ Notable changes for the project.
 ## [Unreleased]
 
 - May 2021 Kext updates
+- OpenCore updated to version 0.6.9
 
 ## [2.4.5] - 2021-04-18
 
