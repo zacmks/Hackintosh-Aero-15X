@@ -4,6 +4,10 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- 
+
+## [2.4.7] - 2021-06-08
+
 - June 2021 Kext updates
 - OpenCore updated to version 0.7.0
 - Updated OCBinaryData, pickermode to external by default (graphical boot loader)
@@ -138,7 +142,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.6...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.7...HEAD
+[2.4.7]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.6...2.4.7
 [2.4.6]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.5...2.4.6
 [2.4.5]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.4...2.4.5
 [2.4.4]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.3...2.4.4
