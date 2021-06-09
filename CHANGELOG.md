@@ -6,6 +6,7 @@ Notable changes for the project.
 
 - June 2021 Kext updates
 - OpenCore updated to version 0.7.0
+- Updated OCBinaryData, pickermode to external by default (graphical boot loader)
 
 ## [2.4.6] - 2021-05-07
 
