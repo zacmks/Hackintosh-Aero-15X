@@ -91,13 +91,11 @@ Misc:
 ---
 ## Support status:
 
-- MacOS 10.13 (High Sierra) - Deprecated (*Could work* but does not receive updates)
+- MacOS 10.13 (High Sierra) - NVIDIA Deprecated (*Could work* but does not receive updates)
 
-- MacOS 10.14 (Mojave) - Old Stable
+- MacOS 10.14 (Mojave), and MacOS 10.15 (Catalina) - Old Stable
 
-- MacOS 10.15 (Catalina) - Current supported version
-
-- MacOS 11.0 (Big Sur) - *Reportedly* working
+- MacOS 11 (Big Sur) - Current supported version
 
 ## Special thanks to:
 
