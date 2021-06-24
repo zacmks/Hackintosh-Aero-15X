@@ -4,6 +4,10 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- 
+
+## [2.5.0] - 2021-06-08
+
 - Updated to support MacOS 11 (Big Sur)
 - Fix AirPortBrcmNIC_Injector not being added, fixing overall Wi-Fi issues
 
@@ -143,7 +147,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.7...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.5.0...HEAD
+[2.5.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.7...2.5.0
 [2.4.7]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.6...2.4.7
 [2.4.6]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.5...2.4.6
 [2.4.5]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.4.4...2.4.5
