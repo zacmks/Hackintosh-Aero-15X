@@ -4,7 +4,7 @@
 
 # Hackintosh-Aero-15X
 Hackintosh for Gigabyte Aero 15X V8
-Tested and working on macOS High Sierra, Mojave and Catalina
+Tested and working on macOS High Sierra, Mojave, Catalina, and Big Sur
 
 Please see the following for more details:
 
