@@ -6,7 +6,7 @@ Notable changes for the project.
 
 - 
 
-## [2.5.0] - 2021-06-08
+## [2.5.0] - 2021-06-25
 
 - Updated to support MacOS 11 (Big Sur)
 - Fix AirPortBrcmNIC_Injector not being added, fixing overall Wi-Fi issues
