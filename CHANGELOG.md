@@ -4,7 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
-- 
+- July 2021 Kext updates
 
 ## [2.5.0] - 2021-06-25
 
