@@ -10,7 +10,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-Disable-DGPU.aml</string>
 			</dict>
@@ -1207,10 +1207,12 @@
 			<integer>3</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
-			<key>ScanPolicy</key>
-			<integer>0</integer>
 			<key>Vault</key>
 			<string>Optional</string>
+			<key>ScanPolicy</key>
+			<integer>0</integer>
+			<key>SecureBootModel</key>
+			<string>j680</string>
 		</dict>
 		<key>Tools</key>
 		<array>
