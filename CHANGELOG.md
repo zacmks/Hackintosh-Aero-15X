@@ -4,7 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
-- 
+- Clean ocvalidate warnings
 
 ## [2.6.0] - 2021-11-14
 
