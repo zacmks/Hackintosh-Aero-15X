@@ -4,6 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- SSDT-PNLFCFL replaced by the new updated SSDT-PNLF
 - November 2021 Kext updates
 - ~~October 2021 Kext updates~~
 
