@@ -4,6 +4,11 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- 
+
+## [2.6.0] - 2021-11-14
+
+- Updaded and cleaned config.plist with ocvalidate for OC 0.7.5
 - Added ResizeAppleGpuBars and ResizeGpuBars entries
 - Clean ocvalidate warnings, removed redundant nvram reset option
 
@@ -167,7 +172,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.0...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.1...HEAD
+[2.6.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.0...2.6.1
 [2.6.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.5.2...2.6.0
 [2.5.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.5.1...2.5.2
 [2.5.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.5.0...2.5.1
