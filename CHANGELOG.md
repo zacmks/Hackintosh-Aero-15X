@@ -8,7 +8,7 @@ Notable changes for the project.
 
 ## [2.6.0] - 2021-11-14
 
-- Updaded and cleaned config.plist with ocvalidate for OC 0.7.5
+- Updated and cleaned config.plist with ocvalidate for OC 0.7.5
 - Added ResizeAppleGpuBars and ResizeGpuBars entries
 - Clean ocvalidate warnings, removed redundant nvram reset option
 
