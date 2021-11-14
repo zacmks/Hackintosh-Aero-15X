@@ -4,6 +4,9 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- OpenCore updated to version 0.7.5
+- Updated new config.plist Drivers section
+- EFI Drivers updated
 - SSDT-PNLFCFL replaced by the new updated SSDT-PNLF
 - November 2021 Kext updates
 - ~~October 2021 Kext updates~~
