@@ -4,7 +4,8 @@ Notable changes for the project.
 
 ## [Unreleased]
 
-- Clean ocvalidate warnings
+- Added ResizeAppleGpuBars and ResizeGpuBars entries
+- Clean ocvalidate warnings, removed redundant nvram reset option
 
 ## [2.6.0] - 2021-11-14
 
