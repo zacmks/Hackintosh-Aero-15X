@@ -69,9 +69,9 @@ Misc:
 - [x] Ambient Light Sensor & Saving/Restoring screen brightness on reboot
 - [x] **Disable eGPU to save power
 
-*\* For Sleep: Add **-wegnoegpu** to your boot-args.* **This disables USB-C external monitor**
+*\* For Sleep: Add **-wegnoegpu** to your boot-args.* **This disables USB-C external monitor hotplug capabilities**
 
-*\*\* Prefer to use **SSDT-Disable-DGPU.aml** patch to save power as it ACPI disables the eGPU.* **This also disables USB-C external monitor** (**-wegnoegpu** can be used in conjunction with **SSDT-Disable-DGPU.aml**)
+*\*\* Prefer to use **SSDT-Disable-DGPU.aml** patch to save power as it ACPI disables the eGPU.* **This also disables USB-C external monitor hotplug capabilities** (**-wegnoegpu** can be used in conjunction with **SSDT-Disable-DGPU.aml**)
 
 **Graphics**
 - [x] Intel graphics card
