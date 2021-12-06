@@ -4,7 +4,7 @@
 
 # Hackintosh-Aero-15X
 Hackintosh for Gigabyte Aero 15X V8
-Tested and working on macOS High Sierra, Mojave, Catalina, and Big Sur
+Tested and working (at some point) on macOS High Sierra, Mojave, Catalina, and Big Sur.
 
 Please see the following for more details:
 
@@ -46,7 +46,7 @@ Misc:
 - EFI/OC: All necessary OpenCore files (with kexts, configs, patches, etc.)
 - EFI/Boot: Has other necessary boot files
 
-**Clover is not supported**
+**Clover is not supported anymore. Last Clover release: [2.2.0-Clover_Latest](https://github.com/zacmks/Hackintosh-Aero-15X/releases/tag/2.2.0-Clover_Latest)
 
 ## Working
 
@@ -69,11 +69,9 @@ Misc:
 - [x] Ambient Light Sensor & Saving/Restoring screen brightness on reboot
 - [x] **Disable eGPU to save power
 
-*\* For Sleep to work, add **-wegnoegpu** to your boot-args (Mojave/Catalina+). However, this makes USB-C external monitors undetectable after boot*
+*\* For Sleep: Add **-wegnoegpu** to your boot-args.* **This disables USB-C external monitor**
 
-*\*\* Prefer to use **SSDT-Disable-DGPU.aml** patch to save power, as it ACPI disables the eGPU. This also makes USB-C external monitors undetectable after boot*
- 
-**-wegnoegpu** can be used in conjunction with **SSDT-Disable-DGPU.aml**
+*\*\* Prefer to use **SSDT-Disable-DGPU.aml** patch to save power as it ACPI disables the eGPU.* **This also disables USB-C external monitor** (**-wegnoegpu** can be used in conjunction with **SSDT-Disable-DGPU.aml**)
 
 **Graphics**
 - [x] Intel graphics card
@@ -95,7 +93,7 @@ Misc:
 
 - MacOS 10.14 (Mojave), and MacOS 10.15 (Catalina) - Old Stable
 
-- MacOS 11 (Big Sur) - Current supported version
+- MacOS 11 (Big Sur) - Currently supported version
 
 ## Special thanks to:
 
