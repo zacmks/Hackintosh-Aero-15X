@@ -4,6 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- OpenCore updated to version 0.7.6
 - Disabled NoTouchID.kext
 - December 2021 Kext updates
 
