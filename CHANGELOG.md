@@ -4,6 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- Disabled NoTouchID.kext
 - December 2021 Kext updates
 
 ## [2.6.1] - 2021-11-14
