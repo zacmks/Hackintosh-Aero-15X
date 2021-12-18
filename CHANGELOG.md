@@ -2,7 +2,7 @@
 
 Notable changes for the project.
 
-## [Unreleased]
+## [2.6.2] - 2021-12-18
 
 - OpenCore updated to version 0.7.6
 - Disabled NoTouchID.kext
@@ -174,7 +174,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.1...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.2...HEAD
+[2.6.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.1...2.6.2
 [2.6.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.0...2.6.1
 [2.6.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.5.2...2.6.0
 [2.5.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.5.1...2.5.2
