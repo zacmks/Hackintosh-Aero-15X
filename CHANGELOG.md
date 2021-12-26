@@ -5,8 +5,10 @@ Notable changes for the project.
 ## [Unreleased]
 
 - Special multi version support
+- Added Kexts for all supported macOS versions
 - macOS Monterey 12.1 (21C52)
 - 
+- Added CpuTscSync.kext
 
 ## [2.6.2] - 2021-12-18
 
