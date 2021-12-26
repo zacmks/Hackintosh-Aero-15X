@@ -2,6 +2,12 @@
 
 Notable changes for the project.
 
+## [Unreleased]
+
+- Special multi version support
+- macOS Monterey 12.1 (21C52)
+- 
+
 ## [2.6.2] - 2021-12-18
 
 - OpenCore updated to version 0.7.6
