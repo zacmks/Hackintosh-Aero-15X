@@ -7,7 +7,7 @@ Notable changes for the project.
 - Special multi version support
 - Added Kexts for all supported macOS versions
 - macOS Monterey 12.1 (21C52)
-- macOS Mojave 10.14.6 (18G103)
+- macOS Mojave 10.14.6 (18G103 and 18G9323)
 - 
 - Added CpuTscSync.kext
 
