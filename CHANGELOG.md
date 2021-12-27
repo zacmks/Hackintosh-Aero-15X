@@ -7,6 +7,7 @@ Notable changes for the project.
 - Special multi version support
 - Added Kexts for all supported macOS versions
 - macOS Monterey 12.1 (21C52)
+- macOS Monterey 10.15.7 (19H15)
 - macOS Mojave 10.14.6 (18G103 and 18G9323)
 - macOS High Sierra 10.13.6 (17G2208, 17G14033 and 17G14042)
 - 
