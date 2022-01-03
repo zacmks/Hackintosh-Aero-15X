@@ -4,6 +4,10 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- 
+
+## [2.7.0-SP]
+
 - Special multi version support
 - Added Kexts for all supported macOS versions
 - macOS Monterey 12.1 (21C52)
@@ -185,7 +189,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.2...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.7.0-SP...HEAD
+[2.7.0-SP]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.2...2.7.0-SP
 [2.6.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.1...2.6.2
 [2.6.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.0...2.6.1
 [2.6.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.5.2...2.6.0

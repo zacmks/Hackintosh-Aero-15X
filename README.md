@@ -46,7 +46,13 @@ Misc:
 - EFI/OC: All necessary OpenCore files (with kexts, configs, patches, etc.)
 - EFI/Boot: Has other necessary boot files
 
-**Clover is not supported anymore. Last Clover release: [2.2.0-Clover_Latest](https://github.com/zacmks/Hackintosh-Aero-15X/releases/tag/2.2.0-Clover_Latest)
+*Clover is not supported anymore. Last Clover release: [2.2.0-Clover_Latest](https://github.com/zacmks/Hackintosh-Aero-15X/releases/tag/2.2.0-Clover_Latest)
+
+## Special Multi-Version release
+
+The current special multi-version release are:
+
+[2.7.0-SP](https://github.com/zacmks/Hackintosh-Aero-15X/releases/2.7.0-SP) - 10.13.6, 10.14.6, 10.15.7, 11.6.2 and 12.1
 
 ## Working
 
