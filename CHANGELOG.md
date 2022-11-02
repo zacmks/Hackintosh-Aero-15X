@@ -4,7 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
-- 
+- October 2022 Kext updates
 
 ## [2.7.0-SP]
 
