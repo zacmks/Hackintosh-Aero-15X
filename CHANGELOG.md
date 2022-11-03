@@ -4,6 +4,8 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- OpenCore updated to version 0.8.5
+- config.plist reviewed and ocvalidated
 - October 2022 Kext updates
 
 ## [2.7.0-SP]
