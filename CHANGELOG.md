@@ -4,6 +4,7 @@ Notable changes for the project.
 
 ## [Unreleased]
 
+- [NEW] Added working config-oclp-nvidia.plist for Nvidia dGPU support via OCLP
 - OpenCore updated to version 0.8.5
 - config.plist reviewed and ocvalidated
 - October 2022 Kext updates
