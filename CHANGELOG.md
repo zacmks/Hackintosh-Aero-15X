@@ -4,7 +4,11 @@ Notable changes for the project.
 
 ## [Unreleased]
 
-- macOS 12 (Monterey) support
+- 
+
+## [2.8.0]
+
+- **macOS 12 (Monterey) support**
 - [NEW] Added working config-oclp-nvidia.plist for Nvidia dGPU support via OCLP
 - OpenCore updated to version 0.8.5
 - config.plist reviewed and ocvalidated
@@ -193,7 +197,8 @@ Notable changes for the project.
 - Clover
 - FakeSMC
 
-[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.7.0-SP...HEAD
+[unreleased]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.8.0...HEAD
+[2.8.0]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.7.0-SP...2.8.0
 [2.7.0-SP]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.2...2.7.0-SP
 [2.6.2]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.1...2.6.2
 [2.6.1]: https://github.com/zacmks/Hackintosh-Aero-15X/compare/2.6.0...2.6.1
