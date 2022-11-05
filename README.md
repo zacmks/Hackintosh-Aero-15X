@@ -4,11 +4,13 @@
 
 # Hackintosh-Aero-15X
 Hackintosh for Gigabyte Aero 15X V8
-Tested and working (at some point) on macOS High Sierra, Mojave, Catalina, and Big Sur.
+Tested and working (at some point) on macOS High Sierra, Mojave, Catalina, Big Sur and Monterey (currently supported version).
 
-Please see the following for more details:
+Please see the following for more details*:
 
 https://www.tonymacx86.com/threads/guide-aero-15x-v8-mojave-catalina.287164/
+
+*May contain outdated info
 
 ## Specs
 
@@ -46,11 +48,15 @@ Misc:
 - EFI/OC: All necessary OpenCore files (with kexts, configs, patches, etc.)
 - EFI/Boot: Has other necessary boot files
 
-*Clover is not supported anymore. Last Clover release: [2.2.0-Clover_Latest](https://github.com/zacmks/Hackintosh-Aero-15X/releases/tag/2.2.0-Clover_Latest)
+In summary:
+
+- Use EFI folder to boot/install your hackintosh
+- Setup for the SMBIOS information for your installation
+- Optionally, apply the CFG lock fix
 
 ## Special Multi-Version release
 
-The current special multi-version release are:
+The current special multi-version release is:
 
 [2.7.0-SP](https://github.com/zacmks/Hackintosh-Aero-15X/releases/2.7.0-SP) - 10.13.6, 10.14.6, 10.15.7, 11.6.2 and 12.1
 
@@ -92,14 +98,14 @@ The current special multi-version release are:
 
 - [ ] Nvidia Graphics card (Only High Sierra with WebDrivers)
 
+*It's possible to use the Nvidia graphics card with OCLP. This has been tested and was working. I'll not 'officially support' this as it's not my current setup
+
 ---
 ## Support status:
 
-- MacOS 10.13 (High Sierra) - NVIDIA Deprecated (*Could work* but does not receive updates)
+- macOS 12 (Monterey) - Currently* supported version
 
-- MacOS 10.14 (Mojave), and MacOS 10.15 (Catalina) - Old Stable
-
-- MacOS 11 (Big Sur) - Currently supported version
+*The efi folder might work on other macOS versions
 
 ## Special thanks to:
 
