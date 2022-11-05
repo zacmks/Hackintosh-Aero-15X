@@ -51,7 +51,7 @@ Misc:
 In summary:
 
 - Use EFI folder to boot/install your hackintosh
-- Setup for the SMBIOS information for your installation
+- Set the SMBIOS information for your installation
 - Optionally, apply the CFG lock fix
 
 ## Special Multi-Version release
@@ -98,7 +98,7 @@ The current special multi-version release is:
 
 - [ ] Nvidia Graphics card (Only High Sierra with WebDrivers)
 
-*It's possible to use the Nvidia graphics card with OCLP. This has been tested and was working. I'll not 'officially support' this as it's not my current setup
+*It's possible to use the Nvidia graphics card with OCLP. This has been tested and was working. I'll not "officially support" this as it's not my current setup
 
 ---
 ## Support status:
