@@ -1,0 +1,32 @@
+{
+  "title": "Keyboard + Mouse",
+  "rules": [
+    {
+      "description": "left_control + button1 to left_command + button1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button1", 
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1", 
+              "modifiers": [
+             	"left_command"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
