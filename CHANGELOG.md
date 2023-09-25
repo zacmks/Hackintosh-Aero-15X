@@ -9,7 +9,7 @@ Notable changes for the project.
 - Added my personal karabiner config (keybindings to work like Windows/Linux)
 - September 2023 Kext updates
 - OpenCore updated to version 0.9.5
-
+- config.plist reviewed and ocvalidated with 0.9.5
 
 ## [2.8.0] - 2021-12-18
 
