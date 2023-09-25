@@ -7,8 +7,11 @@ Notable changes for the project.
 - **macOS 13 (Ventura) support**
 - Update 2.8.0 CHANGELOG.md to state Ventura support
 - Added my personal karabiner config (keybindings to work like Windows/Linux)
+- September 2023 Kext updates
+- OpenCore updated to version 0.9.5
 
-## [2.8.0]
+
+## [2.8.0] - 2021-12-18
 
 - **macOS 12 (Monterey) + macOS 13 (Ventura) support**
 - [NEW] Added working config-oclp-nvidia.plist for Nvidia dGPU support via OCLP
@@ -17,7 +20,7 @@ Notable changes for the project.
 - October 2022 Kext updates
 - *Ventura support was tested updating using macOS's Software Update from Monterey
 
-## [2.7.0-SP]
+## [2.7.0-SP] - 2021-12-18
 
 - Special multi version support
 - Added Kexts for all supported macOS versions
